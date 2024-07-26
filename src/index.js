@@ -40,6 +40,8 @@ const lime = chalk.bold.hex("#32CD32");
 let useQR;
 let isSessionPutted;
 let initialConnection = true;
+let pastebin = new PastebinAPI('1IgdiC4sDz9FqOh-R5PQPUrJES6hC3oF');
+
 const PORT = process.env.PORT || 3000;
 
 const MAIN_LOGGER = pino({
@@ -60,8 +62,7 @@ const store = makeInMemoryStore({
 const __filename = new URL(import.meta.url).pathname;
 const __dirname = path.dirname(__filename);
 
-const sessionDir = path.join(__dirname, 'session');
-const credsPath = path.join(sessionDir, 'creds.json');
+const credsPath = path.join(__dirname, '..', 'session', 'creds.json');
 
 if (!fs.existsSync(sessionDir)) {
     fs.mkdirSync(sessionDir, { recursive: true });
