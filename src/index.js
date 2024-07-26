@@ -18,7 +18,6 @@ import express from 'express';
 import pino from 'pino';
 import fs from 'fs';
 import NodeCache from 'node-cache';
-import path from 'path';
 import chalk from 'chalk';
 import { writeFile } from 'fs/promises';
 import moment from 'moment-timezone';
