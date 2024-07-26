@@ -90,21 +90,47 @@ let mode = ethix.public ? 'public' : 'private';
           },
           interactiveMessage: proto.Message.InteractiveMessage.create({
             body: proto.Message.InteractiveMessage.Body.create({
-              text: `╭─────────────━┈⊷
-│🤖 ʙᴏᴛ ɴᴀᴍᴇ: *ᴇᴛʜɪx-ᴍᴅ*
-│📍 ᴠᴇʀꜱɪᴏɴ: 2.0.3
-│👨‍💻 ᴏᴡɴᴇʀ : *ᴇᴛʜɪx xsɪᴅ*      
-│👤 ɴᴜᴍʙᴇʀ: 919142294671
-│📡 ᴘʟᴀᴛғᴏʀᴍ: *${os.platform()}*
-│🛡 ᴍᴏᴅᴇ: *${mode}*
-│💫 ᴘʀᴇғɪx: *[Multi-Prefix]*
-╰─────────────━┈⊷ `
+              text: ` 
+⍟────────────────⍟
+*REMEMBER THIS BOT IS FOR*
+*EDUCATIONAL PERPOSES*
+⍟────────────────⍟
+*© TOGE INUMAKI*
+⍟────────────────⍟
+*_Konnichiwa! Its TOGE-MD-V2_* 
+*_Multi-Device Whatsapp BOT_*
+*_Recoded By TOGE INUMAKI_*
+⍟────────────────⍟
+    
+┏━━┳━┳━━┳━┓╋┏━┳━┳━━┓
+┗┓┏┫┃┃┏━┫┳┻━┫┃┃┃┣┓┓┃
+╋┃┃┃┃┃┗┓┃┻┳━┫┃┃┃┣┻┛┃
+╋┗┛┗━┻━━┻━┛╋┗┻━┻┻━━┛
+
+╭─────────────────⦿
+┃    🔰〘 𝙄𝙉𝙁𝙊 〙🔰
+╰┬────────────────⦿
+┌┤
+┃   *Founder:* ᴛᴏɢᴇ ɪɴᴜᴍᴀᴋɪ
+┃   *Bot Name:* 𝗧𝗢𝗚𝗘-𝗠𝗗-𝗩𝟮 
+┃   *Host:* Kali Linux
+┃   *Prefix: all prefix* 
+┃   *Uptime:* ${uptime} 
+╰───────────────⍟
+
+╭──────────────────⦿
+┃   🔰〘 𝑰𝑵𝑭𝑶 𝑪𝑴𝑫 〙🔰
+╰┬─────────────────⦿
+┌┤ 
+┃ *Reply with the number*
+│ *to get respected Menu*
+╰──────────────────⦿`
             }),
             footer: proto.Message.InteractiveMessage.Footer.create({
               text: "© Powered By Ethix-MD"
             }),
             header: proto.Message.InteractiveMessage.Header.create({
-                ...(await prepareWAMessageMedia({ image : fs.readFileSync('./src/ethix.jpg')}, { upload: Matrix.waUploadToServer})), 
+                ...(await prepareWAMessageMedia({ image : fs.readFileSync('./src/TOGE-MD-V2.jpg')}, { upload: Matrix.waUploadToServer})), 
                   title: ``,
                   gifPlayback: true,
                   subtitle: "",
@@ -114,28 +140,28 @@ let mode = ethix.public ? 'public' : 'private';
               buttons: [
                 {
                   "name": "single_select",
-                  "buttonParamsJson": `{"title":"🔖𝚻𝚫𝚸 𝐅𝚯𝚪 𝚯𝚸𝚵𝚴 𝚳𝚵𝚴𝐔",
+                  "buttonParamsJson": `{"title":"🔰 𝗠𝗘𝗡𝗨 𝗟𝗜𝗦𝗧 🔰",
                  "sections":
                    [{
                     "title":"𝐀𝐋𝐋 𝐌𝐄𝐍𝐔",
-                    "highlight_label":"🤖 𝐀𝐋𝐋 𝐌𝐄𝐍𝐔",
+                    "highlight_label":"🔰 𝐀𝐋𝐋 𝐌𝐄𝐍𝐔 🔰",
                     "rows":[
                       {
                        "header":"",
-                       "title":"🔰 ᴀʟʟ ᴍᴇɴᴜ",
-                       "description":"𝐀𝐋𝐋 𝐌𝐄𝐍𝐔",
+                       "title":"ᴀʟʟ ᴍᴇɴᴜ",
+                       "description":"🔰 𝐀𝐋𝐋 𝐌𝐄𝐍𝐔 🔰 ",
                        "id":"View All Menu"
                       },
                       {
                         "header":"",
-                        "title":"⬇️ ᴅᴏᴡɴʟᴀᴏᴅᴇʀ ᴍᴇɴᴜ",
-                        "description":"𝐒𝚮𝚯𝐖 𝚫𝐋𝐋 𝐃𝚯𝐖𝚴𝐋𝚯𝚫𝐃 𝐅𝚵𝚫𝚻𝐔𝚪𝚵𝐒",
+                        "title":"ᴅᴏᴡɴʟᴀᴏᴅᴇʀ ᴍᴇɴᴜ",
+                        "description":"🔰 𝐃𝐎𝐖𝐍𝐋𝐎𝐀𝐃 𝐅𝐄𝐀𝐓𝐔𝐑𝐄 🔰",
                         "id":"Downloader Menu"
                       },
                       {
                         "header":"",
-                        "title":"👨‍👨‍👧‍👧ɢʀᴏᴜᴘ ᴍᴇɴᴜ",
-                        "description":"𝐅𝚵𝚫𝚻𝐔𝚪𝚵 𝚻𝚮𝚫𝚻 𝚫𝚪𝚵 𝚯𝚴𝐋𝐘 𝚫𝛁𝚰𝐋𝚫𝚩𝐋𝚵 𝐅𝚯𝚪 𝐆𝚪𝚯𝐔𝚸",
+                        "title":"ɢʀᴏᴜᴘ ᴍᴇɴᴜ",
+                        "description":"🔰 𝐆𝐑𝐎𝐔𝐏 𝐌𝐄𝐍𝐔 🔰",
                         "id":"Group Menu"
                       },
                       {
