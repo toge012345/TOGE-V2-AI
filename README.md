@@ -2,14 +2,19 @@
 
 ## `⭐Star This Repo⭐` 
 
+## 🌟 `Bot Intro and Features`
+[![XLICON](https://raw.githubusercontent.com/toge012345/TOGE-MD-V2/main/toge-v2.jpg)](https://chat.whatsapp.com/JQ4s2pJuBReE7YL9wKJPHo)
 
-[![TOGE-MD-V2](https://raw.githubusercontent.com/toge012345/TOGE-MD-V2/main/toge-v2.jpg)](https://chat.whatsapp.com/JQ4s2pJuBReE7YL9wKJPHo)
+<p align="center">
+<a href="https://github.com/toge012345"><img title="Author" src="https://img.shields.io/badge/TOGE-MD-V2-black.svg?style=for-the-badge&logo=github"></a>
+
 </p>
 
    
  
 
 <h1 align="center"> ℹ️ BOT INFO
+   
 </p>
   
 ##
@@ -50,22 +55,18 @@
  [DO YOU NEED HELP ?](#do-you-need-help)
 ___
 
-### Features
+## 🚀 `Bot Features`
+| Feature                          | Description                                             | Available    | Version    |
+| ---------------------------------| ------------------------------------------------------- | ------------ | ---------- |
+| Multi-Device Support             | Operate the bot on multiple devices simultaneously      | ✅           | 3.0        |
+| AI Chat Bot                      | Bot Can Reply To Questions                              | ✅           | 3.0        |
+| Downloader Commands              | Download various types of content from the internet     | ✅           | 3.0        
+| 
+| Bot Cantrol Commands             | Cantrol Bot Without Opening Deploy Platform             | ✅           | 3.0        |
+| Various Games                    | Enjoy a variety of games within the bot                 | ✅           | 3.0        |
+| Audio/Video Editor Commands      | Edit audio and video files with bot commands            | ✅           | 3.0        |
 
-- ✅ | EASY TO USE
-- ✅ | AI INTEGRATED
-- ✅ | NSFW
-- ✅ | STICKER
-- ✅ | GAMES 
-- ✅ | ANIME 
-- ✅ | TOOLS
 
-
-___
-
-<a 
-href="https://www.opensourceagenda.com/projects/star-md-v2"><img src="https://www.opensourceagenda.com/projects/star-md-v2/reviews/badge.svg" alt="Open Source Agenda"></a> 
----------
 
 ___
 
