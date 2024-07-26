@@ -1,58 +1,32 @@
 # ⚠ WORKING ON UPDATES ⚠
-
-## `⭐Star This Repo⭐` 
+ 
 
 ## 🌟 `Bot Intro and Features`
-[![XLICON](https://raw.githubusercontent.com/toge012345/TOGE-MD-V2/main/toge-v2.jpg)](https://chat.whatsapp.com/JQ4s2pJuBReE7YL9wKJPHo)
+
+[![TOGE-MD-V2](https://raw.githubusercontent.com/toge012345/TOGE-MD-V2/main/toge-v2.jpg)](https://chat.whatsapp.com/JQ4s2pJuBReE7YL9wKJPHo)
 
 <p align="center">
-<a href="https://github.com/toge012345"><img title="Author" src="https://img.shields.io/badge/TOGE-MD-V2-black.svg?style=for-the-badge&logo=github"></a>
+<a href="https://github.com/toge012345"><img title="Author" src="https://img.shields.io/badge/CREATOR-SALMAN"></a>
 
 </p>
 
    
  
 
-<h1 align="center"> ℹ️ BOT INFO
-   
-</p>
-  
-##
-**TOGE-MD-V2 is a 🌟 versatile Multi-Device< WhatsApp bot 🤖 recoded by the talented [toge012345](https://github.com/toge012345) It offers a wide array of features, making it an advanced 📡 and user-friendly bot for various purposes. 🎉📱 With its intuitive interface and robust capabilities, users can unlock endless possibilities 🚀 and streamline their communication across devices with ease.**
 
+
+### ℹ️ **About TOGE-MD-V2**
+TOGE-MD-V2 is a Cool Multi-Device WhatsApp bot developed by [toge012345](https://github.com/toge012345). It offers a wide range of extraordinary features, making it an advanced and user-friendly bot for various purposes.
+
+<p align="center"><img src="https://profile-counter.glitch.me/{TOGE-MD-V2}/count.svg" alt="toge012345 :: Visitor's Count" /></p>
 ---------
 
 
-
-
- 
-<h1 align="center"> 🔰𝗧𝗢𝗚𝗘-𝗠𝗗-𝗩𝟮🔰
-</p>
- 
----------
-<h1 align="center"> 👀REPO VIEWS👀
-</p>
-
-</a>
-   <a aria-label="TOGE-MD-V2 is free to use" href="https://whatsapp.com/channel/0029VaBcXo4JJhzW9c1uVD2X" target="_blank">
- <p align="center"><img src="https://profile-counter.glitch.me/{toge012345}/count.svg" alt="toge012345:: Visitor's Count" /></p>
-
-
-
----------
-
-
-
-
-
----------
 
 
 #
 
-[](0) 
 
- [DO YOU NEED HELP ?](#do-you-need-help)
 ___
 
 ## 🚀 `Bot Features`
@@ -63,8 +37,7 @@ ___
 | Downloader Commands              | Download various types of content from the internet     | ✅           | 3.0        
 | 
 | Bot Cantrol Commands             | Cantrol Bot Without Opening Deploy Platform             | ✅           | 3.0        |
-| Various Games                    | Enjoy a variety of games within the bot                 | ✅           | 3.0        |
-| Audio/Video Editor Commands      | Edit audio and video files with bot commands            | ✅           | 3.0        |
+
 
 
 
