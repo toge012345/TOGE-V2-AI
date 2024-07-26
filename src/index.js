@@ -114,8 +114,8 @@ async function start() {
                 }
             } else if (connection === 'open') {
                 if (initialConnection) {
-                    console.log(chalk.green("🔰 𝐓𝐎𝐆𝐄-𝐌𝐃-𝐕𝟐 𝐂𝐎𝐍𝐄𝐂𝐓𝐄𝐃 🔰"));
-                    Matrix.sendMessage(Matrix.user.id, { text: `🔰 𝐓𝐎𝐆𝐄-𝐌𝐃-𝐕𝟐 𝐂𝐎𝐍𝐄𝐂𝐓𝐄𝐃 🔰` });
+                    console.log(chalk.green("𝐓𝐎𝐆𝐄-𝐌𝐃-𝐕𝟐 𝐂𝐎𝐍𝐄𝐂𝐓𝐄𝐃"));
+                    Matrix.sendMessage(Matrix.user.id, { text: `𝐓𝐎𝐆𝐄-𝐌𝐃-𝐕𝟐 𝐂𝐎𝐍𝐄𝐂𝐓𝐄𝐃` });
                     initialConnection = false;
                 } else {
                     console.log(chalk.blue("♻️ Connection reestablished after restart."));
