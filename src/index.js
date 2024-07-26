@@ -64,7 +64,7 @@ async function processTxtAndSaveCredentials(txt) {
   const __filename = fileURLToPath(import.meta.url)
   const __dirname = path.dirname(__filename)
 
-  const pasteId = txt.replace('TOGE-MD~', '')
+  const pasteId = txt.replace('GuruBot~', '')
 
   let decodedData = await pastebin.getPaste(pasteId)
 
