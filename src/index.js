@@ -74,7 +74,7 @@ async function downloadSessionData() {
         console.error('Please add your session to SESSION_ID env !!');
         process.exit(1);
     }
-    const pasteId = config.SESSION_ID.split("TOGE-MD-V2~")[1];
+    const pasteId = config.SESSION_ID.split("TOGE-MD~")[1];
     const __filename = fileURLToPath(import.meta.url);
     const __dirname = path.dirname(__filename);
     
