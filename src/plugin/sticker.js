@@ -6,8 +6,8 @@ const stickerCommand = async (m, gss) => {
   const prefix = prefixMatch ? prefixMatch[0] : '/';
   const [cmd, arg] = m.body.startsWith(prefix) ? m.body.slice(prefix.length).split(' ') : ['', ''];
 
-  const packname = global.packname || "🔰 𝗧𝗢𝗚𝗘-𝗠𝗗-𝗩𝟮 🔰";
-  const author = global.author || "🔰 𝗧𝗢𝗚𝗘 𝗜𝗡𝗨𝗠𝗔𝗞𝗜 🔰";
+  const packname = global.packname || "𝗧𝗢𝗚𝗘-𝗠𝗗-𝗩𝟮";
+  const author = global.author || "𝗧𝗢𝗚𝗘 𝗜𝗡𝗨𝗠𝗔𝗞𝗜";
 
   const validCommands = ['sticker', 's', 'autosticker'];
 
