@@ -27,13 +27,6 @@ import fetch from 'node-fetch';
 import * as os from 'os';
 import config from '../config.cjs';
 import pkg from '../lib/autoreact.cjs';
-import { fileURLToPath } from 'url';
-import path from 'path';
-import { writeFileSync } from 'fs';
-import { BufferJSON } from '@whiskeysockets/baileys';
-import PastebinAPI from 'pastebin-js';
-let pastebin = new PastebinAPI('1IgdiC4sDz9FqOh-R5PQPUrJES6hC3oF');
-
 const { emojis, doReact } = pkg;
 
 const sessionName = "session";
@@ -60,25 +53,24 @@ const store = makeInMemoryStore({
     })
 });
 
-async function processTxtAndSaveCredentials(txt) {
-  const __filename = fileURLToPath(import.meta.url)
-  const __dirname = path.dirname(__filename)
+const __filename = new URL(import.meta.url).pathname;
+const __dirname = path.dirname(__filename);
 
-  const pasteId = txt.replace('GuruBot~', '')
+const sessionDir = path.join(__dirname, 'session');
+const credsPath = path.join(sessionDir, 'creds.json');
 
-  let decodedData = await pastebin.getPaste(pasteId)
-
-  try {
-    const credsPath = path.join(__dirname, '..', 'session', 'creds.json')
-    writeFileSync(credsPath, decodedData.toString())
-    console.log('Saved credentials to', credsPath)
-  } catch (jsonError) {
-    console.error('Error parsing JSON:', jsonError)
-  }
+if (!fs.existsSync(sessionDir)) {
+    fs.mkdirSync(sessionDir, { recursive: true });
 }
 
-export default processTxtAndSaveCredentials
-}
+async function downloadSessionData() {
+    if (!config.SESSION_ID) {
+        console.error('Please add your session to SESSION_ID env !!');
+        process.exit(1);
+    }
+    const sessdata = config.SESSION_ID.split("TOGE-MD-V2~")[1];
+    const url = `https://pastebin.com/raw/${sessdata}`;
+    try {
         const response = await axios.get(url);
         const data = typeof response.data === 'string' ? response.data : JSON.stringify(response.data);
         await fs.promises.writeFile(credsPath, data);
@@ -122,8 +114,8 @@ async function start() {
                 }
             } else if (connection === 'open') {
                 if (initialConnection) {
-                    console.log(chalk.green("😃 Integration Successful️ ✅"));
-                    Matrix.sendMessage(Matrix.user.id, { text: `😃 Integration Successful️ ✅` });
+                    console.log(chalk.green("🔰 𝐓𝐎𝐆𝐄-𝐌𝐃- 𝐕𝟐 𝐂𝐎𝐍𝐄𝐂𝐓𝐄𝐃 🔰"));
+                    Matrix.sendMessage(Matrix.user.id, { text: `🔰 𝐓𝐎𝐆𝐄-𝐌𝐃- 𝐕𝟐 𝐂𝐎𝐍𝐄𝐂𝐓𝐄𝐃 🔰` });
                     initialConnection = false;
                 } else {
                     console.log(chalk.blue("♻️ Connection reestablished after restart."));
@@ -172,3 +164,4 @@ app.get('/', (req, res) => {
 app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);
 });
+       
