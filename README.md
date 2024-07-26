@@ -3,7 +3,7 @@
 ## `⭐Star This Repo⭐` 
 
 
-[![TOGE-MD-V2](https://i.imgur.com/2gd0YRc.jpeg)](https://whatsapp.com/channel/0029VaBcXo4JJhzW9c1uVD2X)
+[![TOGE-MD-V2](https://raw.githubusercontent.com/toge012345/TOGE-MD-V2/main/toge-v2.jpg)](https://chat.whatsapp.com/JQ4s2pJuBReE7YL9wKJPHo)
 </p>
 
    
@@ -13,7 +13,7 @@
 </p>
   
 ##
-**TOGE-MD-V2 is a 🌟 versatile Multi-Device< WhatsApp bot 🤖 recoded by the talented [Excel Amadi](https://github.com/toge012345) It offers a wide array of features, making it an advanced 📡 and user-friendly bot for various purposes. 🎉📱 With its intuitive interface and robust capabilities, users can unlock endless possibilities 🚀 and streamline their communication across devices with ease.**
+**TOGE-MD-V2 is a 🌟 versatile Multi-Device< WhatsApp bot 🤖 recoded by the talented [toge012345](https://github.com/toge012345) It offers a wide array of features, making it an advanced 📡 and user-friendly bot for various purposes. 🎉📱 With its intuitive interface and robust capabilities, users can unlock endless possibilities 🚀 and streamline their communication across devices with ease.**
 
 ---------
 
@@ -37,6 +37,8 @@
 ---------
 
 
+#
+
 ### Features
 
 - ✅ | EASY TO USE
@@ -51,6 +53,12 @@
 ___
 
 
+
+
+
+
+
+#
 
 ## 📲`Installation Process`📲
 
