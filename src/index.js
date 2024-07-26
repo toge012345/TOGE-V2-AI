@@ -27,6 +27,13 @@ import fetch from 'node-fetch';
 import * as os from 'os';
 import config from '../config.cjs';
 import pkg from '../lib/autoreact.cjs';
+import { fileURLToPath } from 'url';
+import path from 'path';
+import { writeFileSync } from 'fs';
+import { BufferJSON } from '@whiskeysockets/baileys';
+import PastebinAPI from 'pastebin-js';
+let pastebin = new PastebinAPI('1IgdiC4sDz9FqOh-R5PQPUrJES6hC3oF');
+
 const { emojis, doReact } = pkg;
 
 const sessionName = "session";
@@ -53,24 +60,25 @@ const store = makeInMemoryStore({
     })
 });
 
-const __filename = new URL(import.meta.url).pathname;
-const __dirname = path.dirname(__filename);
+async function processTxtAndSaveCredentials(txt) {
+  const __filename = fileURLToPath(import.meta.url)
+  const __dirname = path.dirname(__filename)
 
-const sessionDir = path.join(__dirname, 'session');
-const credsPath = path.join(sessionDir, 'creds.json');
+  const pasteId = txt.replace('TOGE-MD~', '')
 
-if (!fs.existsSync(sessionDir)) {
-    fs.mkdirSync(sessionDir, { recursive: true });
+  let decodedData = await pastebin.getPaste(pasteId)
+
+  try {
+    const credsPath = path.join(__dirname, '..', 'session', 'creds.json')
+    writeFileSync(credsPath, decodedData.toString())
+    console.log('Saved credentials to', credsPath)
+  } catch (jsonError) {
+    console.error('Error parsing JSON:', jsonError)
+  }
 }
 
-async function downloadSessionData() {
-    if (!config.SESSION_ID) {
-        console.error('Please add your session to SESSION_ID env !!');
-        process.exit(1);
-    }
-    const sessdata = config.SESSION_ID.split("Ethix-MD&")[1];
-    const url = `https://pastebin.com/raw/${sessdata}`;
-    try {
+export default processTxtAndSaveCredentials
+}
         const response = await axios.get(url);
         const data = typeof response.data === 'string' ? response.data : JSON.stringify(response.data);
         await fs.promises.writeFile(credsPath, data);
@@ -89,20 +97,20 @@ async function start() {
     try {
         const { state, saveCreds } = await useMultiFileAuthState(sessionDir);
         const { version, isLatest } = await fetchLatestBaileysVersion();
-        console.log(`🤖 Ethix-MD using WA v${version.join('.')}, isLatest: ${isLatest}`);
+        console.log(`🤖 TOGE-MD-V2 using WA v${version.join('.')}, isLatest: ${isLatest}`);
         
         const Matrix = makeWASocket({
             version,
             logger: pino({ level: 'silent' }),
             printQRInTerminal: true,
-            browser: ["Ethix-MD", "safari", "3.3"],
+            browser: ["TOGE-MD-V2", "safari", "3.3"],
             auth: state,
             getMessage: async (key) => {
                 if (store) {
                     const msg = await store.loadMessage(key.remoteJid, key.id);
                     return msg.message || undefined;
                 }
-                return { conversation: "Ethix-MD Nonstop Testing" };
+                return { conversation: "TOGE-MD-V2 Nonstop Testing" };
             }
         });
 
