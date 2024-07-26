@@ -12,15 +12,13 @@ const alive = async (m, Matrix) => {
   const cmd = m.body.startsWith(prefix) ? m.body.slice(prefix.length).toLowerCase() : '';
     if (['alive', 'uptime', 'runtime'].includes(cmd)) {
 
-  const uptimeMessage = `*🤖 ETHIX-MD Status Overview*
-_________________________________________
-
-*📆 ${days} Day*
-*🕰️ ${hours} Hour*
-*⏳ ${minutes} Minute*
-*⏲️ ${seconds} Second*
-_________________________________________
-`;
+  const uptimeMessage = `┏━━🤖 _BOT STATUS:_🤖━━┓
+┃ 🏮  *Founder:* 𝗧𝗢𝗚𝗘 𝗜𝗡𝗨𝗠𝗔𝗞𝗜
+┃ 🤡  *Bot Name:* 𝗧𝗢𝗚𝗘-𝗠𝗗-𝗩𝟮
+┃ 💻  *Host:* Kali Linux
+┃ 📣  *Prefix:* ${usedPrefix} 
+┃ 🕓  *Uptime:* ${uptime}
+╰───────────────⍟`;
 
   const buttons = [
         {
@@ -51,7 +49,7 @@ _________________________________________
             text: uptimeMessage
           }),
           footer: proto.Message.InteractiveMessage.Footer.create({
-            text: "© Powered By 𝞢𝙏𝞖𝞘𝞦-𝞛𝘿"
+            text: "𝐆𝐄𝐍𝐄𝐑𝐀𝐓𝐄𝐃 𝐁𝐘 𝐓𝐎𝐆𝐄-𝐌𝐃-𝐕𝟐"
           }),
           header: proto.Message.InteractiveMessage.Header.create({
             title: "",
@@ -67,8 +65,8 @@ _________________________________________
                   forwardingScore: 999,
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                  newsletterJid: '120363249960769123@newsletter',
-                  newsletterName: "Ethix-MD",
+                  newsletterJid: '120463249960769123@newsletter',
+                  newsletterName: "TOGE-MD-V2",
                   serverMessageId: 143
                 }
               }
