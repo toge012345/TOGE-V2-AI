@@ -27,7 +27,7 @@ TOGE-MD-V2 is a Cool Multi-Device WhatsApp bot developed by [toge012345](https:/
 #
 
 
-___
+
 
 ## 🚀 `Bot Features`
 | Feature                          | Description                                             | Available    | Version    |
@@ -36,8 +36,7 @@ ___
 | AI Chat Bot                      | Bot Can Reply To Questions                              | ✅           | 3.0        |
 | Downloader Commands              | Download various types of content from the internet     | ✅           | 3.0        
 | 
-| Bot Cantrol Commands             | Cantrol Bot Without Opening Deploy Platform             | ✅           | 3.0        |
-
+|
 
 
 
