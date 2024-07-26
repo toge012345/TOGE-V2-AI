@@ -16,7 +16,7 @@ const joinGroup = async (m, gss) => {
     
     
 
-    if (!isCreator) return m.reply("*📛 THIS IS AN OWNER COMMAND*");
+    if (!isCreator) return m.reply("*🔰 THIS IS AN OWNER COMMAND 🔰*");
 
     if (!text) throw '*Enter The Group Link!*';
     if (!isUrl(args[0]) && !args[0].includes('whatsapp.com')) throw '*INVALID LINK!*';
@@ -25,7 +25,7 @@ const joinGroup = async (m, gss) => {
     const result = args[0].split('https://chat.whatsapp.com/')[1];
 
     await gss.groupAcceptInvite(result)
-      .then((res) => m.reply(`*📛 SUCCESSFULLY JOINED THE GROUP. ${JSON.stringify(res)}`))
+      .then((res) => m.reply(`*🔰 SUCCESSFULLY JOINED THE GROUP. ${JSON.stringify(res)}`))
       .catch((err) => m.reply(`*🚫 FAILED TO JOIN THE GROUP. ${JSON.stringify(err)}`));
   } catch (error) {
     console.error('Error:', error);
