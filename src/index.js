@@ -1,3 +1,6 @@
+ning on port ${PORT}`);
+});
+
 import dotenv from 'dotenv';
 dotenv.config();
 
@@ -53,6 +56,11 @@ const store = makeInMemoryStore({
     })
 });
 
+const __filename = new URL(import.meta.url).pathname;
+const __dirname = path.dirname(__filename);
+
+const sessionDir = path.join(__dirname, 'session');
+const credsPath = path.join(sessionDir, 'creds.json');
 
 if (!fs.existsSync(sessionDir)) {
     fs.mkdirSync(sessionDir, { recursive: true });
@@ -63,37 +71,11 @@ async function downloadSessionData() {
         console.error('Please add your session to SESSION_ID env !!');
         process.exit(1);
     }
-    async function processTxtAndSaveCredentials(txt) {
-  const __filename = fileURLToPath(import.meta.url);
-  const __dirname = path.dirname(__filename);
-
-  const pasteId = txt.replace('TOGE-MD~', '');
-  const txt = process.env.SESSION_ID;
- 
-  let decodedData = await pastebin.getPaste(pasteId);
-
-  try {
-    const credsPath = path.join(__dirname, '..', 'session', 'creds.json')
-    writeFileSync(credsPath, decodedData.toString())
-    console.log('Saved credentials to', credsPath)
-  } catch (jsonError) {
-    console.error('Error parsing JSON:', jsonError);
-  }
-}
-
-export default processTxtAndSaveCredentials
+    const sessdata = config.SESSION_ID.split("Ethix-MD&")[1];
+    const url = `https://pastebin.com/raw/${sessdata}`;
     try {
         const response = await axios.get(url);
         const data = typeof response.data === 'string' ? response.data : JSON.stringify(response.data);
-        const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
-
-app.use(express.static(path.join(__dirname, 'Assets')));
-
-app.get('/', (req, res) => {
-  res.redirect('/TOGE-MD-V2.html');
-});
-        
         await fs.promises.writeFile(credsPath, data);
         console.log("🔒 Session Successfully Loaded !!");
     } catch (error) {
@@ -110,7 +92,7 @@ async function start() {
     try {
         const { state, saveCreds } = await useMultiFileAuthState(sessionDir);
         const { version, isLatest } = await fetchLatestBaileysVersion();
-        console.log(`🤖 TOGE-MD-V2 using WA v${version.join('.')}, isLatest: ${isLatest}`);
+        console.log(`🤖 Ethix-MD using WA v${version.join('.')}, isLatest: ${isLatest}`);
         
         const Matrix = makeWASocket({
             version,
@@ -185,4 +167,4 @@ app.get('/', (req, res) => {
 app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);
 });
-
+    
