@@ -37,7 +37,18 @@
 ---------
 
 
+
+
+
+---------
+
+
 #
+
+[](0) 
+
+ [DO YOU NEED HELP ?](#do-you-need-help)
+___
 
 ### Features
 
@@ -52,15 +63,11 @@
 
 ___
 
+<a 
+href="https://www.opensourceagenda.com/projects/star-md-v2"><img src="https://www.opensourceagenda.com/projects/star-md-v2/reviews/badge.svg" alt="Open Source Agenda"></a> 
+---------
 
-
-
-
-
-
-
-
-#
+___
 
 ## 📲`Installation Process`📲
 
@@ -81,6 +88,16 @@ ___
   <img src="https://img.shields.io/badge/PAIR CODE-black?style=for-the-badge&logo=render" alt="Authenticate With WhatsApp" width="170" height="34">
 </a>
 
+
+
+
+
+
+
+
+
+
+#
 
 #### DEPLOY TO HEROKU 
 
