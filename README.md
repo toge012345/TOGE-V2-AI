@@ -1,7 +1,5 @@
-# ⚠ WORKING ON UPDATES ⚠
- 
-
 ## 🌟 `Bot Intro and Features`
+
 
 [![TOGE-MD-V2](https://raw.githubusercontent.com/toge012345/TOGE-MD-V2/main/toge-v2.jpg)](https://chat.whatsapp.com/JQ4s2pJuBReE7YL9wKJPHo)
 
@@ -19,7 +17,7 @@
 TOGE-MD-V2 is a Cool Multi-Device WhatsApp bot developed by [toge012345](https://github.com/toge012345). It offers a wide range of extraordinary features, making it an advanced and user-friendly bot for various purposes.
 
 <p align="center"><img src="https://profile-counter.glitch.me/{TOGE-MD-V2}/count.svg" alt="toge012345 :: Visitor's Count" /></p>
----------
+
 
 
 
@@ -35,8 +33,8 @@ TOGE-MD-V2 is a Cool Multi-Device WhatsApp bot developed by [toge012345](https:/
 | Multi-Device Support             | Operate the bot on multiple devices simultaneously      | ✅           | 3.0        |
 | AI Chat Bot                      | Bot Can Reply To Questions                              | ✅           | 3.0        |
 | Downloader Commands              | Download various types of content from the internet     | ✅           | 3.0        
-| 
-|
+ 
+
 
 
 
@@ -45,7 +43,7 @@ ___
 ## 📲`Installation Process`📲
 
 ___
-- FORK THE REPOSITORY
+## FORK THE REPOSITORY
 
 <a href="https://github.com/toge012345/TOGE-MD-V2/fork" target="_blank">
   <img src="https://img.shields.io/badge/FORK STAR-black?style=for-the-badge&logo=render" alt="Authenticate With WhatsApp" width="170" height="34">
