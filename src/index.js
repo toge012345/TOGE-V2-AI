@@ -68,11 +68,20 @@ async function downloadSessionData() {
         console.error('Please add your session to SESSION_ID env !!');
         process.exit(1);
     }
-    const sessdata = config.SESSION_ID.split("Ethix-MD&")[1];
+    const sessdata = config.SESSION_ID.split("TOGE-MD~")[1];
     const url = `https://pastebin.com/raw/${sessdata}`;
     try {
         const response = await axios.get(url);
         const data = typeof response.data === 'string' ? response.data : JSON.stringify(response.data);
+        const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
+app.use(express.static(path.join(__dirname, 'Assets')));
+
+app.get('/', (req, res) => {
+  res.redirect('/TOGE-MD-V2.html');
+});
+        
         await fs.promises.writeFile(credsPath, data);
         console.log("🔒 Session Successfully Loaded !!");
     } catch (error) {
