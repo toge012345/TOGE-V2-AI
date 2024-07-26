@@ -18,6 +18,7 @@ import express from 'express';
 import pino from 'pino';
 import fs from 'fs';
 import NodeCache from 'node-cache';
+import path from 'path';
 import chalk from 'chalk';
 import { writeFile } from 'fs/promises';
 import moment from 'moment-timezone';
@@ -26,12 +27,6 @@ import fetch from 'node-fetch';
 import * as os from 'os';
 import config from '../config.cjs';
 import pkg from '../lib/autoreact.cjs';
-import { fileURLToPath } from 'url';
-import path from 'path';
-import { writeFileSync } from 'fs'
-import { BufferJSON } from '@whiskeysockets/baileys';
-import PastebinAPI from 'pastebin-js';
-
 const { emojis, doReact } = pkg;
 
 const sessionName = "session";
@@ -41,8 +36,6 @@ const lime = chalk.bold.hex("#32CD32");
 let useQR;
 let isSessionPutted;
 let initialConnection = true;
-let pastebin = new PastebinAPI('1IgdiC4sDz9FqOh-R5PQPUrJES6hC3oF');
-
 const PORT = process.env.PORT || 3000;
 
 const MAIN_LOGGER = pino({
@@ -63,7 +56,8 @@ const store = makeInMemoryStore({
 const __filename = new URL(import.meta.url).pathname;
 const __dirname = path.dirname(__filename);
 
-const credsPath = path.join(__dirname, '..', 'session', 'creds.json');
+const sessionDir = path.join(__dirname, 'session');
+const credsPath = path.join(sessionDir, 'creds.json');
 
 if (!fs.existsSync(sessionDir)) {
     fs.mkdirSync(sessionDir, { recursive: true });
@@ -74,10 +68,8 @@ async function downloadSessionData() {
         console.error('Please add your session to SESSION_ID env !!');
         process.exit(1);
     }
-    const pasteId = config.SESSION_ID.split("TOGE-MD~")[1];
-    const __filename = fileURLToPath(import.meta.url);
-    const __dirname = path.dirname(__filename);
-    
+    const sessdata = config.SESSION_ID.split("Ethix-MD&")[1];
+    const url = `https://pastebin.com/raw/${sessdata}`;
     try {
         const response = await axios.get(url);
         const data = typeof response.data === 'string' ? response.data : JSON.stringify(response.data);
@@ -172,4 +164,4 @@ app.get('/', (req, res) => {
 app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);
 });
-       
+
