@@ -127,7 +127,7 @@ let mode = ethix.public ? 'public' : 'private';
 ╰──────────────────⦿`
             }),
             footer: proto.Message.InteractiveMessage.Footer.create({
-              text: "© Powered By Ethix-MD"
+              text: "ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴛᴏɢᴇ-ᴍᴅ-ᴠ2"
             }),
             header: proto.Message.InteractiveMessage.Header.create({
                 ...(await prepareWAMessageMedia({ image : fs.readFileSync('./src/TOGE-MD-V2.jpg')}, { upload: Matrix.waUploadToServer})), 
@@ -166,44 +166,44 @@ let mode = ethix.public ? 'public' : 'private';
                       },
                       {
                         "header":"",
-                        "title":"👨‍🔧 ᴛᴏᴏʟ ᴍᴇɴᴜ",
-                        "description":"𝐒𝚮𝚯𝐖 𝚳𝚵 𝚻𝚯𝚯𝐋 𝚳𝚵𝚴𝐔",
+                        "title":"ᴛᴏᴏʟ ᴍᴇɴᴜ",
+                        "description":"🔰 𝐓𝐎𝐎𝐋 𝐌𝐄𝐍𝐔 🔰",
                         "id":"Tool Menu"
                       },
                       {
                         "header":"",
-                        "title":"🗿 ᴍᴀɪɴ ᴍᴇɴᴜ",
-                        "description":"𝚩𝚯𝚻 𝚳𝚫𝚰𝚴 𝐂𝚯𝚳𝚳𝚫𝚴𝐃𝐒",
+                        "title":"ᴍᴀɪɴ ᴍᴇɴᴜ",
+                        "description":"🔰 𝐁𝐎𝐓 𝐂𝐎𝐌𝐌𝐀𝐍𝐃𝐒 🔰",
                         "id":"Main Menu"
                       },
                      {
                         "header":"",
-                        "title":"👨‍💻 ᴏᴡɴᴇʀ ᴍᴇɴᴜ",
-                        "description":"𝐅𝚵𝚫𝚻𝐔𝚪𝚵 𝚻𝚮𝚫𝚻 𝚫𝚪𝚵 𝚯𝚴𝐋𝐘 𝐅𝚯𝚪 𝚳𝐘 𝚮𝚫𝚴𝐃𝐒𝚯𝚳𝚵 𝚯𝐖𝚴𝚵𝚪👨‍💼",
+                        "title":"ᴏᴡɴᴇʀ ᴍᴇɴᴜ",
+                        "description":"🔰 𝐎𝐖𝐍𝐄𝐑 𝐌𝐄𝐍𝐔 🔰",
                         "id":"Owner Menu"
                       },
                       {
                         "header":"",
-                        "title":"✨ ᴀɪ ᴍᴇɴᴜ",
-                        "description":"💫 𝐒𝚮𝚯𝐖 𝚳𝚵 𝚫𝚰 𝚳𝚵𝚴𝐔 🎇",
+                        "title":"ᴀɪ ᴍᴇɴᴜ",
+                        "description":"🔰 𝐀𝐈 𝐌𝐄𝐍𝐔 🔰",
                         "id":"Ai Menu"
                       },
                       {
                         "header":"",
-                        "title":"🔍sᴇᴀʀᴄʜ ᴍᴇɴᴜ🔎",
-                        "description":"♂️ 𝐒𝚮𝚯𝐖 𝚳𝚵 𝐒𝚵𝚫𝚪𝐂𝚮 𝚳𝚵𝚴𝐔",
+                        "title":"sᴇᴀʀᴄʜ ᴍᴇɴᴜ",
+                        "description":"🔰 𝐒𝐄𝐀𝐑𝐂𝐇𝐄 𝐌𝐄𝐍𝐔 🔰",
                         "id":"Search Menu"
                       },
                       {
                         "header":"",
-                        "title":"🧚‍♂️ sᴛᴀʟᴋ ᴍᴇɴᴜ",
-                        "description":"👨‍💼 𝐒𝚮𝚯𝐖 𝚳𝚵 𝐒𝚻𝚫𝐋𝐊 𝚳𝚵𝚴𝐔🪆",
+                        "title":"sᴛᴀʟᴋ ᴍᴇɴᴜ",
+                        "description":"🔰 𝐒𝐓𝐀𝐋𝐊 𝐌𝐄𝐍𝐔 🔰",
                         "id":"Stalk Menu"
                       },
                       {
                         "header":"",
-                        "title":"🥏 𝚌𝚘𝚗𝚟𝚎𝚛𝚝𝚎𝚛 𝚖𝚎𝚗𝚞",
-                        "description":"🛷 𝐒𝚮𝚯𝐖 𝚳𝚵 𝐂𝚯𝚴𝛁𝚵𝚪𝚻𝚵𝚪 𝚳𝚵𝚴𝐔",
+                        "title":"𝚌𝚘𝚗𝚟𝚎𝚛𝚝𝚎𝚛 𝚖𝚎𝚗𝚞",
+                        "description":"🔰 𝐂𝐎𝐍𝐕𝐄𝐑𝐓𝐄𝐑 𝐌𝐄𝐍𝐔 🔰",
                         "id":"Converter Menu"
                       }
                     ]}
