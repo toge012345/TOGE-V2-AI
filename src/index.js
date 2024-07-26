@@ -30,6 +30,7 @@ import { fileURLToPath } from 'url';
 import path from 'path';
 import { writeFileSync } from 'fs'
 import { BufferJSON } from '@whiskeysockets/baileys';
+import PastebinAPI from 'pastebin-js';
 
 const { emojis, doReact } = pkg;
 
