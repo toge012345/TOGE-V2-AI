@@ -194,12 +194,12 @@ const playcommand = async (m, Matrix) => {
                 document: buffer,
                 mimetype: type === 'audiodoc' ? 'audio/mpeg' : 'video/mp4',
                 fileName: `${selectedMedia.title}.${type === 'audiodoc' ? 'mp3' : 'mp4'}`,
-                caption: `*Downloaded by 𝞢𝙏𝞖𝞘𝞦-𝞛𝘿*`,
+                caption: `*𝐆𝐄𝐍𝐄𝐑𝐀𝐓𝐄𝐃 𝐁𝐘 𝐓𝐎𝐆𝐄-𝐌𝐃-𝐕𝟐*`,
                 contextInfo: {
                   externalAdReply: {
                     showAdAttribution: true,
                     title: selectedMedia.title,
-                    body: 'Ethix-MD',
+                    body: 'TOGE-MD-V2',
                     thumbnailUrl: selectedMedia.thumbnail,
                     sourceUrl: selectedMedia.url,
                     mediaType: 1,
