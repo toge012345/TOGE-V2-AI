@@ -69,7 +69,7 @@ const playcommand = async (m, Matrix) => {
               body: proto.Message.InteractiveMessage.Body.create({
                 text: `*YOUTUBE SEARCH*\n\n> *TITLE:* ${currentResult.title}\n> *AUTHOR:* ${currentResult.author.name}\n> *VIEWS:* ${currentResult.views}\n> *DURATION:* ${currentResult.timestamp}\n> *YTLINK:* ${url}\n`
               }),
-              footer: proto.Message.InteractiveMessage.Footer.create({ text: "© Powered By 𝞢𝙏𝞖𝞘𝞦-𝞛𝘿" }),
+              footer: proto.Message.InteractiveMessage.Footer.create({ text: "𝐆𝐄𝐍𝐄𝐑𝐀𝐓𝐄𝐃 𝐁𝐘 𝐓𝐎𝐆𝐄-𝐌𝐃-𝐕𝟐" }),
               header: proto.Message.InteractiveMessage.Header.create({
                 ...(await prepareWAMessageMedia({ image: { url: thumbnailUrl } }, { upload: Matrix.waUploadToServer })),
                 title: "",
@@ -124,7 +124,7 @@ const playcommand = async (m, Matrix) => {
               body: proto.Message.InteractiveMessage.Body.create({
                 text: `*YOUTUBE SEARCH*\n\n> *🔍TITLE:* ${currentResult.title}\n> *AUTHOR:* ${currentResult.author.name}\n> *VIEWS:* ${currentResult.views}\n> *DURATION:* ${currentResult.timestamp}\n> *YTLINK:* ${url}`
               }),
-              footer: proto.Message.InteractiveMessage.Footer.create({ text: "© Powered By 𝞢𝙏𝞖𝞘𝞦-𝞛𝘿" }),
+              footer: proto.Message.InteractiveMessage.Footer.create({ text: "𝐆𝐄𝐍𝐄𝐑𝐀𝐓𝐄𝐃 𝐁𝐘 𝐓𝐎𝐆𝐄-𝐌𝐃-𝐕𝟐" }),
               header: proto.Message.InteractiveMessage.Header.create({
                 ...(await prepareWAMessageMedia({ image: { url: thumbnailUrl } }, { upload: Matrix.waUploadToServer })),
                 title: "",
