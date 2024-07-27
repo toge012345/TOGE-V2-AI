@@ -1,14 +1,5 @@
-import axios from 'axios';
+import ytdl from '@distube/ytdl-core';
 import yts from 'yt-search';
-
-const fetchAudioDetails = async (url) => {
-  try {
-    const response = await axios.get(`https://matrix-serverless-api.vercel.app/api/ytdl?url=${url}&type=audio`);
-    return response.data;
-  } catch (error) {
-    throw new Error('Error fetching audio details.');
-  }
-};
 
 const song = async (m, Matrix) => {
   const prefixMatch = m.body.match(/^[\\/!#.]/);
@@ -24,14 +15,13 @@ const song = async (m, Matrix) => {
     try {
       await m.React("🕘");
 
-      const isUrl = text.includes('youtube.com') || text.includes('youtu.be');
+      const isUrl = ytdl.validateURL(text);
 
-      const sendAudioMessage = async (videoInfo, audioURL) => {
-        const responseBuffer = await axios.get(audioURL, { responseType: 'arraybuffer' });
+      const sendAudioMessage = async (videoInfo, finalAudioBuffer) => {
 
         if (cmd === 'ytmp3doc') {
           const docMessage = {
-            document: Buffer.from(responseBuffer.data),
+            document: finalAudioBuffer,
             mimetype: 'audio/mpeg',
             fileName: `${videoInfo.title}.mp3`,
             contextInfo: {
@@ -49,7 +39,7 @@ const song = async (m, Matrix) => {
           await Matrix.sendMessage(m.from, docMessage, { quoted: m });
         } else {
           const audioMessage = {
-            audio: Buffer.from(responseBuffer.data),
+            audio: finalAudioBuffer,
             mimetype: 'audio/mpeg',
             contextInfo: {
               mentionedJid: [m.sender],
@@ -70,8 +60,18 @@ const song = async (m, Matrix) => {
       };
 
       if (isUrl) {
-        const { videoDetails, audioURL } = await fetchAudioDetails(text);
-        await sendAudioMessage(videoDetails, audioURL);
+        const audioStream = ytdl(text, { filter: 'audioonly', quality: 'highestaudio' });
+        const audioBuffer = [];
+
+        audioStream.on('data', (chunk) => {
+          audioBuffer.push(chunk);
+        });
+
+        audioStream.on('end', async () => {
+          const finalAudioBuffer = Buffer.concat(audioBuffer);
+          const videoInfo = await yts({ videoId: ytdl.getURLVideoID(text) });
+          await sendAudioMessage(videoInfo, finalAudioBuffer);
+        });
       } else {
         const searchResult = await yts(text);
         const firstVideo = searchResult.videos[0];
@@ -82,8 +82,17 @@ const song = async (m, Matrix) => {
           return;
         }
 
-        const { videoDetails, audioURL } = await fetchAudioDetails(firstVideo.url);
-        await sendAudioMessage(videoDetails, audioURL);
+        const audioStream = ytdl(firstVideo.url, { filter: 'audioonly', quality: 'highestaudio' });
+        const audioBuffer = [];
+
+        audioStream.on('data', (chunk) => {
+          audioBuffer.push(chunk);
+        });
+
+        audioStream.on('end', async () => {
+          const finalAudioBuffer = Buffer.concat(audioBuffer);
+          await sendAudioMessage(firstVideo, finalAudioBuffer);
+        });
       }
     } catch (error) {
       console.error("Error generating response:", error);
