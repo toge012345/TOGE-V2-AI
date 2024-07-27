@@ -59,7 +59,7 @@ const handleRepoCommand = async (m, Matrix) => {
                   name: "cta_url",
                   buttonParamsJson: JSON.stringify({
                     display_text: "Join Our Community",
-                    url: `https://chat.whatsapp.com/JQ4s2pJuBReE7YL9wKJPHo`
+                    url: `https://whatsapp.com/channel/0029VaiuD4s4IBhI0fzbv40Z`
                   })
                 }
               ],
