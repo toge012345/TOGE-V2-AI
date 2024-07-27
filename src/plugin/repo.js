@@ -3,7 +3,7 @@ const { generateWAMessageFromContent, proto } = pkg;
 import axios from 'axios'; // Import axios for HTTP requests
 
 const handleRepoCommand = async (m, Matrix) => {
-  const repoUrl = 'https://api.github.com/repos/https://github.com/toge012345/TOGE-MD-V2';
+  const repoUrl = 'https://api.github.com/repos/toge012345/TOGE-MD-V2';
   try {
     const response = await axios.get(repoUrl);
     const repoData = response.data;
@@ -30,10 +30,10 @@ const handleRepoCommand = async (m, Matrix) => {
               text: messageText
             }),
             footer: proto.Message.InteractiveMessage.Footer.create({
-              text: "𝗚𝗘𝗡𝗘𝗥𝗔𝗧𝗘𝗗 𝗕𝗬 𝗧𝗢𝗚𝗘-𝗠𝗗-𝗩𝟮"
+              text: "𝐆𝐄𝐍𝐄𝐑𝐀𝐓𝐄𝐃 𝐁𝐘 𝐓𝐎𝐆𝐄-𝐌𝐃-𝐕𝟐"
             }),
             header: proto.Message.InteractiveMessage.Header.create({
-             ...(await prepareWAMessageMedia({ image: { url: `https://graph.org/file/dca3670b656918fe9e34d.jpg` } }, { upload: Matrix.waUploadToServer })),
+             ...(await prepareWAMessageMedia({ image: { url: `https://raw.githubusercontent.com/toge012345/TOGE-MD-V2/main/toge-v2.jpg` } }, { upload: Matrix.waUploadToServer })),
               title: "",
               gifPlayback: true,
               subtitle: "",
@@ -99,3 +99,4 @@ const searchRepo = async (m, Matrix) => {
 };
 
 export default searchRepo;
+           
