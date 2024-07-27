@@ -12,12 +12,11 @@ const alive = async (m, Matrix) => {
   const cmd = m.body.startsWith(prefix) ? m.body.slice(prefix.length).toLowerCase() : '';
     if (['alive', 'uptime', 'runtime'].includes(cmd)) {
 
-  const uptimeMessage = `┏━━🤖 _BOT STATUS:_🤖━━┓
+  const uptimeMessage = `
+┏━━🤖 _BOT STATUS:_🤖━━┓
 ┃ 🏮  *Founder:* 𝗧𝗢𝗚𝗘 𝗜𝗡𝗨𝗠𝗔𝗞𝗜
 ┃ 🤡  *Bot Name:* 𝗧𝗢𝗚𝗘-𝗠𝗗-𝗩𝟮
 ┃ 💻  *Host:* Kali Linux
-┃ 📣  *Prefix:* ${usedPrefix} 
-┃ 🕓  *Uptime:* ${uptime}
 ╰───────────────⍟`;
 
   const buttons = [
