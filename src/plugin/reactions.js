@@ -1,6 +1,6 @@
-const Config = require('../../config');
+const Config = require('../../config.cjs');
 const axios = require('axios');
-const { anya, getBuffer, createVidSticker } = require('../lib');
+const { anya, getBuffer, createVidSticker } = require('../src');
 
 //༺─────────────────────────────────────༻
 
