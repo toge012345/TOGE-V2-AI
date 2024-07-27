@@ -1,5 +1,5 @@
 import ytSearch from 'yt-search';
-import fetch from 'node-fetch';
+import axios from 'axios';
 import pkg from '@whiskeysockets/baileys';
 const { generateWAMessageFromContent, proto, prepareWAMessageMedia } = pkg;
 
@@ -69,7 +69,7 @@ const playcommand = async (m, Matrix) => {
               body: proto.Message.InteractiveMessage.Body.create({
                 text: `*YOUTUBE SEARCH*\n\n> *TITLE:* ${currentResult.title}\n> *AUTHOR:* ${currentResult.author.name}\n> *VIEWS:* ${currentResult.views}\n> *DURATION:* ${currentResult.timestamp}\n> *YTLINK:* ${url}\n`
               }),
-              footer: proto.Message.InteractiveMessage.Footer.create({ text: "𝐆𝐄𝐍𝐄𝐑𝐀𝐓𝐄𝐃 𝐁𝐘 𝐓𝐎𝐆𝐄-𝐌𝐃-𝐕𝟐" }),
+              footer: proto.Message.InteractiveMessage.Footer.create({ text: "© Powered By 𝞢𝙏𝞖𝞘𝞦-𝞛𝘿" }),
               header: proto.Message.InteractiveMessage.Header.create({
                 ...(await prepareWAMessageMedia({ image: { url: thumbnailUrl } }, { upload: Matrix.waUploadToServer })),
                 title: "",
@@ -124,7 +124,7 @@ const playcommand = async (m, Matrix) => {
               body: proto.Message.InteractiveMessage.Body.create({
                 text: `*YOUTUBE SEARCH*\n\n> *🔍TITLE:* ${currentResult.title}\n> *AUTHOR:* ${currentResult.author.name}\n> *VIEWS:* ${currentResult.views}\n> *DURATION:* ${currentResult.timestamp}\n> *YTLINK:* ${url}`
               }),
-              footer: proto.Message.InteractiveMessage.Footer.create({ text: "𝐆𝐄𝐍𝐄𝐑𝐀𝐓𝐄𝐃 𝐁𝐘 𝐓𝐎𝐆𝐄-𝐌𝐃-𝐕𝟐" }),
+              footer: proto.Message.InteractiveMessage.Footer.create({ text: "© Powered By 𝞢𝙏𝞖𝞘𝞦-𝞛𝘿" }),
               header: proto.Message.InteractiveMessage.Header.create({
                 ...(await prepareWAMessageMedia({ image: { url: thumbnailUrl } }, { upload: Matrix.waUploadToServer })),
                 title: "",
@@ -152,14 +152,15 @@ const playcommand = async (m, Matrix) => {
 
       if (selectedMedia) {
         try {
-          const apiUrl = `https://matrix-serverless-api.vercel.app/api/ytdl?url=${encodeURIComponent(selectedMedia.url)}&type=${type.includes('audio') ? 'audio' : 'video'}`;
+          const mediaType = type.includes('audio') ? 'audio' : 'video';
+          const apiUrl = `https://matrix-serverless-api.vercel.app/api/ytdl?url=${encodeURIComponent(selectedMedia.url)}&type=${mediaType}`;
 
-          const response = await fetch(apiUrl);
-          const mediaData = await response.json();
+          const { data: mediaData } = await axios.get(apiUrl);
 
-          if (response.ok) {
+          if (mediaData.videoURL || mediaData.audioURL) {
             const mediaUrl = mediaData.videoURL || mediaData.audioURL;
-            const buffer = await fetch(mediaUrl).then(res => res.buffer());
+            const { data: buffer } = await axios.get(mediaUrl, { responseType: 'arraybuffer' });
+
             let content;
 
             if (type === 'audio') {
@@ -185,7 +186,7 @@ const playcommand = async (m, Matrix) => {
               content = {
                 video: buffer,
                 mimetype: 'video/mp4',
-                caption: `> TITLE: ${selectedMedia.title}\n\n*Downloaded by 𝞢𝙏𝞖𝞘𝞦-𝞛𝘿*`
+                caption: `> TITLE: ${selectedMedia.title}\n\n*𝐆𝐄𝐍𝐄𝐑𝐀𝐓𝐄𝐃 𝐁𝐘 𝐓𝐎𝐆𝐄-𝐌𝐃-𝐕𝟐*`
               };
               await Matrix.sendMessage(m.from, content, { quoted: m });
             } else if (type === 'audiodoc' || type === 'videodoc') {
@@ -193,7 +194,7 @@ const playcommand = async (m, Matrix) => {
                 document: buffer,
                 mimetype: type === 'audiodoc' ? 'audio/mpeg' : 'video/mp4',
                 fileName: `${selectedMedia.title}.${type === 'audiodoc' ? 'mp3' : 'mp4'}`,
-                caption: `𝐆𝐄𝐍𝐄𝐑𝐀𝐓𝐄𝐃 𝐁𝐘 𝐓𝐎𝐆𝐄-𝐌𝐃-𝐕𝟐`,
+                caption: `*Downloaded by 𝞢𝙏𝞖𝞘𝞦-𝞛𝘿*`,
                 contextInfo: {
                   externalAdReply: {
                     showAdAttribution: true,
@@ -222,7 +223,7 @@ const playcommand = async (m, Matrix) => {
           await m.React("❌");
         }
       } else {
-     //   m.reply('Invalid media selection.');
+        // m.reply('Invalid media selection.'); // Uncomment if needed
       }
     }
   }
