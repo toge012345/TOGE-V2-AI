@@ -220,7 +220,7 @@ let mode = ethix.public ? 'public' : 'private';
       if (selectedId == "View All Menu") {
         const mode = process.env.MODE;
         const str = `hey ${m.pushName} ${pushwish}
-╭─────────────────⦿
+╭──────────────⦿
 ┃   *Founder:* ᴛᴏɢᴇ ɪɴᴜᴍᴀᴋɪ
 ┃   *Bot Name:* 𝗧𝗢𝗚𝗘-𝗠𝗗-𝗩𝟮 
 ┃   *Host:* Kali Linux
