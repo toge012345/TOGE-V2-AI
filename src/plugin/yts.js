@@ -86,10 +86,10 @@ const song = async (m, Matrix) => {
             },
             interactiveMessage: proto.Message.InteractiveMessage.create({
               body: proto.Message.InteractiveMessage.Body.create({
-                text: `*𝞢𝙏𝞖𝞘𝞦-𝞛𝘿 VIDEO DOWNLOADER*\n\n> *TITLE:* _${title}_\n> *AUTHOR:* _${author}_\n> *DURATION:* _${duration}s_\n> *VIEWS:* _${views}_\n> *URL:* _${url}_`
+                text: `*VIDEO DOWNLOADER*\n\n> *TITLE:* _${title}_\n> *AUTHOR:* _${author}_\n> *DURATION:* _${duration}s_\n> *VIEWS:* _${views}_\n> *URL:* _${url}_`
               }),
               footer: proto.Message.InteractiveMessage.Footer.create({
-                text: "© Powered By Ethix-MD"
+                text: "𝐆𝐄𝐍𝐄𝐑𝐀𝐓𝐄𝐃 𝐁𝐘 𝐓𝐎𝐆𝐄-𝐌𝐃-𝐕𝟐"
               }),
               header: proto.Message.InteractiveMessage.Header.create({
                 ...(await prepareWAMessageMedia({ image: { url: firstVideo.thumbnail } }, { upload: Matrix.waUploadToServer })),
