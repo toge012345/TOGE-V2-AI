@@ -173,7 +173,7 @@ const song = async (m, Matrix) => {
        /*  await Matrix.sendMessage(m.from,
             {
               image: { url: thumbnailUrl },
-              caption: `> *TITLE:* ${title}\n> *AUTHOR:* ${author}\n> *DURATION:* ${duration}\n> *© POWERED BY 𝞢𝙏𝞖𝞘𝞦-𝞛𝘿*`,
+              caption: `> *TITLE:* ${title}\n> *AUTHOR:* ${author}\n> *DURATION:* ${duration}\n> 𝐆𝐄𝐍𝐄𝐑𝐀𝐓𝐄𝐃 𝐁𝐘 𝐓𝐎𝐆𝐄-𝐌𝐃-𝐕𝟐`,
               contextInfo: {
                 externalAdReply: {
                   showAdAttribution: true,
@@ -217,7 +217,7 @@ const song = async (m, Matrix) => {
             {
               video: finalVideoBuffer,
               mimetype: 'video/mp4',
-              caption: `> *TITLE:* ${title}\n> *AUTHOR:* ${author}\n> *DURATION:* ${duration}\n\n> *POWERED BY Ethix-MD*`,
+              caption: `> *TITLE:* ${title}\n> *AUTHOR:* ${author}\n> *DURATION:* ${duration}\n\n> 𝐆𝐄𝐍𝐄𝐑𝐀𝐓𝐄𝐃 𝐁𝐘 𝐓𝐎𝐆𝐄-𝐌𝐃-𝐕𝟐`,
             },
             { quoted: m }
           );
@@ -239,3 +239,4 @@ const streamToBuffer = async (stream) => {
 };
 
 export default song;
+    
