@@ -1,7 +1,4 @@
-const Config = require('../../config');
-const { anya, Group, delay, getBuffer } = require('../lib');
-
-//༺─────────────────────────────────────༻
+const Config = require('../../config.cjs');
 
 const broadcast = [
     {
@@ -55,8 +52,8 @@ broadcast.forEach(bc => {
                                 thumbnail: Config.image_1,
                                 showAdAttribution: true,
                                 mediaType: 2,
-                                mediaUrl: 'https://instagram.com/8.08_only_mine',
-                                sourceUrl: 'https://instagram.com/8.08_only_mine'
+                                mediaUrl: 'https://instagram.com/lawliet.kfx',
+                                sourceUrl: 'https://instagram.com/lawliet.kfx'
                             }
                         }
                 }, { quoted:Config.fakeshop }).catch(err=>{});
