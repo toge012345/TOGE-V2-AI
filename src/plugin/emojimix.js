@@ -25,7 +25,7 @@ const emojimix = async (m, Matrix) => {
     }
 
     for (let res of anu.results) {
-      const encmedia = await Matrix.sendImageAsSticker(m.from, res.url, m, { packname: "", author: "Ethix-MD", categories: res.tags });
+      const encmedia = await Matrix.sendImageAsSticker(m.from, res.url, m, { packname: "", author: "𝐆𝐄𝐍𝐄𝐑𝐀𝐓𝐄𝐃 𝐁𝐘 𝐓𝐎𝐆𝐄-𝐌𝐃-𝐕𝟐", categories: res.tags });
       await fs.unlinkSync(encmedia);
     }
   } catch (error) {
