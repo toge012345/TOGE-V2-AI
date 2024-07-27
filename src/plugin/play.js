@@ -276,7 +276,7 @@ const playcommand = async (m, Matrix) => {
                 externalAdReply: {
                   showAdAttribution: true,
                   title: selectedMedia.title,
-                  body: 'Ethix-MD',
+                  body: 'TOGE-MD-V2',
                   thumbnailUrl: selectedMedia.thumbnail,
                   sourceUrl: selectedMedia.url,
                   mediaType: 1,
