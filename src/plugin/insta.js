@@ -22,7 +22,7 @@ const instaDownload = async (m, Matrix) => {
 
       if (result.success && result.data && result.data.length > 0) {
         const mediaUrl = result.data[0].url_download; // Use the first media URL from the array
-        const caption = "© Powered By Ethix-MD";
+        const caption = "𝐆𝐄𝐍𝐄𝐑𝐀𝐓𝐄𝐃 𝐁𝐘 𝐓𝐎𝐆𝐄-𝐌𝐃-𝐕𝟐";
 
         await Matrix.sendMedia(m.from, mediaUrl, 'file', caption, m);
         await m.React('✅');
