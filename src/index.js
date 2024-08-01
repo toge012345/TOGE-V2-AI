@@ -68,7 +68,7 @@ async function downloadSessionData() {
         console.error('Please add your session to SESSION_ID env !!');
         process.exit(1);
     }
-    const sessdata = config.SESSION_ID.split("TOGE-MD~")[1];
+    const sessdata = config.SESSION_ID.split("TOGE-MD&")[1];
     const url = `https://pastebin.com/raw/${sessdata}`;
     try {
         const response = await axios.get(url);
@@ -114,8 +114,8 @@ async function start() {
                 }
             } else if (connection === 'open') {
                 if (initialConnection) {
-                    console.log(chalk.green("𝐓𝐎𝐆𝐄-𝐌𝐃-𝐕𝟐 𝐂𝐎𝐍𝐄𝐂𝐓𝐄𝐃"));
-                    Matrix.sendMessage(Matrix.user.id, { text: `𝐓𝐎𝐆𝐄-𝐌𝐃-𝐕𝟐 𝐂𝐎𝐍𝐄𝐂𝐓𝐄𝐃` });
+                    console.log(chalk.green("𝐓𝐎𝐆𝐄-𝐌𝐃- 𝐕𝟐 𝐂𝐎𝐍𝐄𝐂𝐓𝐄𝐃"));
+                    Matrix.sendMessage(Matrix.user.id, { text: `> 𝐓𝐎𝐆𝐄-𝐌𝐃- 𝐕𝟐 𝐂𝐎𝐍𝐄𝐂𝐓𝐄𝐃 ` });
                     initialConnection = false;
                 } else {
                     console.log(chalk.blue("♻️ Connection reestablished after restart."));
@@ -164,3 +164,4 @@ app.get('/', (req, res) => {
 app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);
 });
+    
