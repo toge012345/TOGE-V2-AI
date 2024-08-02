@@ -89,7 +89,7 @@ async function start() {
     try {
         const { state, saveCreds } = await useMultiFileAuthState(sessionDir);
         const { version, isLatest } = await fetchLatestBaileysVersion();
-        console.log(`🧬HANSAMAL-MD using WA v${version.join('.')}, isLatest: ${isLatest}`);
+        console.log(`🧬TOGE-MD-V2 using WA v${version.join('.')}, isLatest: ${isLatest}`);
         
         const Matrix = makeWASocket({
             version,
@@ -102,7 +102,7 @@ async function start() {
                     const msg = await store.loadMessage(key.remoteJid, key.id);
                     return msg.message || undefined;
                 }
-                return { conversation: "Hansamal-MD Nonstop Testing" };
+                return { conversation: "TOGE-MD-V2 Nonstop Testing" };
             }
         });
 
@@ -114,8 +114,8 @@ async function start() {
                 }
             } else if (connection === 'open') {
                 if (initialConnection) {
-                    console.log(chalk.green("HANSAMAL-MD CONNECTED Successful️ ✅"));
-                    Matrix.sendMessage(Matrix.user.id, { text: `HANSAMAL-MD CONNECTED Successful️ ✅` });
+                    console.log(chalk.green("TOGE-MD-V2 CONNECTED Successful️ ✅"));
+                    Matrix.sendMessage(Matrix.user.id, { text: `TOGE-MD-V2 CONNECTED Successful️ ✅` });
                     initialConnection = false;
                 } else {
                     console.log(chalk.blue("♻️ Connection reestablished after restart."));
