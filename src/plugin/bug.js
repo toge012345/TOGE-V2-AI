@@ -1,25 +1,7 @@
-/**
- * Copyright (C) 2024 CrazyPrince
- *
- * Licensed under the GNU General Public License v3.0 (GPL-3.0)
- * You may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *     (https://whatsapp.com/channel/0029VaV3DymGE56jsC8j1M3c)
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- *
- * @project       CRAZY-MD
- * @author        CrazyPrince <https://github.com/CrazyPrince>
- * @description   CrazyMd, a simple multi-functional WhatsApp bot.
- * @version       0.0.1
- * @license       GPL-3.0
- * @link          (https://github.com/CrazyPrince/CRAZY-MD)
- */
+/*
+BY TOGE-MD-V2
+*/
+
 const axios = require('axios')
 const pino = require("pino");
 const { sck1, tiny, fancytext, cmd } = require('../lib/')
@@ -68,7 +50,7 @@ cmd({
 const LENGTH1 = 3; // Nombre de fois que le texte est dupliqué
 const FORCE1 = 3;  // Nombre de fois que le message est envoyé
 let prefix = '໒ཞศƶƴ_♇ཞརས໒ཛ👑===>>💣💣💣777';
-const {crazyvirtex1} = require('../lib/virtex/crazyvirtex1');
+const {crazyvirtex1} = require('../lib/virtex/xeontext1');
 
 cmd({
         pattern: "clean",
@@ -97,7 +79,7 @@ cmd({
 // Définir les valeurs de configuration directement dans le fichier
 const LENGTH2 = 1; // Nombre de fois que le texte est dupliqué
 const FORCE2 = 3;  // Nombre de fois que le message est envoyé
-const {crazyvirtex2} = require('../lib/virtex/crazyvirtex2');
+const {crazyvirtex2} = require('../lib/virtex/xeontext2');
 
 cmd({
         pattern: "bug1",
@@ -130,7 +112,7 @@ cmd({
 // Définir les valeurs de configuration directement dans le fichier
 const LENGTH3 = 1; // Nombre de fois que le texte est dupliqué
 const FORCE3 = 3;  // Nombre de fois que le message est envoyé
-const crazyvirtex3 = require('../lib/virtex/crazyvirtex3');
+const crazyvirtex3 = require('../lib/virtex/xeontext3');
 
 cmd({
         pattern: "bug2",
@@ -162,7 +144,7 @@ cmd({
 // Définir les valeurs de configuration directement dans le fichier
 const LENGTH4 = 1; // Nombre de fois que le texte est dupliqué
 const FORCE4 = 3;  // Nombre de fois que le message est envoyé
-const crazyvirtex4 = require('../lib/virtex/crazyvirtex4');
+const crazyvirtex4 = require('../lib/virtex/xeontext4');
 
 cmd({
         pattern: "bug3",
@@ -180,7 +162,7 @@ cmd({
 
             // Envoyer le message selon FORCE
             for (let i = 0; i < FORCE4; i++) {
-                await Void.sendMessage(citel.chat, { text: prefix + crazyvirtex4},{ quoted: citel });
+                await Void.sendMessage(citel.chat, { text: prefix + xeontext4},{ quoted: citel });
             }
         } catch (error) {
             console.error("Error sending text message: ", error);
@@ -194,7 +176,7 @@ cmd({
 // Définir les valeurs de configuration directement dans le fichier
 const LENGTH5 = 1; // Nombre de fois que le texte est dupliqué
 const FORCE5 = 3;  // Nombre de fois que le message est envoyé
-const crazyvirtex5 = require('../lib/virtex/crazyvirtex5');
+const crazyvirtex5 = require('../lib/virtex/xeontext5');
 
 cmd({
         pattern: "bug4",
@@ -212,7 +194,7 @@ cmd({
 
             // Envoyer le message selon FORCE
             for (let i = 0; i < FORCE5; i++) {
-                await Void.sendMessage(citel.chat, { text: prefix + crazyvirtex5},{ quoted: citel });
+                await Void.sendMessage(citel.chat, { text: prefix + xeontext5},{ quoted: citel });
             }
         } catch (error) {
             console.error("Error sending text message: ", error);
@@ -227,7 +209,7 @@ cmd({
 // Définir les valeurs de configuration directement dans le fichier
 const LENGTH6 = 1; // Nombre de fois que le texte est dupliqué
 const FORCE6 = 3;  // Nombre de fois que le message est envoyé
-const crazyvirtex6 = require('../lib/virtex/crazyvirtex6');
+const crazyvirtex6 = require('../lib/virtex/xeontext6');
 
 cmd({
         pattern: "bug5",
@@ -260,7 +242,7 @@ cmd({
 // Définir les valeurs de configuration directement dans le fichier
 const LENGTH7 = 1; // Nombre de fois que le texte est dupliqué
 const FORCE7 = 3;  // Nombre de fois que le message est envoyé
-const crazyvirtex7 = require('../lib/virtex/crazyvirtex7');
+const crazyvirtex7 = require('../lib/virtex/xeontext7');
 
 cmd({
         pattern: "bug6",
@@ -293,7 +275,7 @@ cmd({
 // Définir les valeurs de configuration directement dans le fichier
 const LENGTH8 = 1; // Nombre de fois que le texte est dupliqué
 const FORC8 = 3;  // Nombre de fois que le message est envoyé
-const crazyvirtex8 = require('../lib/virtex/crazyvirtex8');
+const crazyvirtex8 = require('../lib/virtex/xeontext8');
 
 cmd({
         pattern: "bug7",
@@ -311,7 +293,7 @@ cmd({
 
             // Envoyer le message selon FORCE
             for (let i = 0; i < FORCE8; i++) {
-                await Void.sendMessage(citel.chat, { text: prefix + crazyvirtex8},{ quoted: citel });
+                await Void.sendMessage(citel.chat, { text: prefix + xeontext8},{ quoted: citel });
             }
         } catch (error) {
             console.error("Error sending text message: ", error);
@@ -326,7 +308,7 @@ cmd({
 // Définir les valeurs de configuration directement dans le fichier
 const LENGTH9 = 1; // Nombre de fois que le texte est dupliqué
 const FORCE9 = 3;  // Nombre de fois que le message est envoyé
-const crazyvirtex9 = require('../lib/virtex/crazyvirtex9');
+const crazyvirtex9 = require('../lib/virtex/xeontext9');
 
 cmd({
         pattern: "bug8",
@@ -344,7 +326,7 @@ cmd({
 
             // Envoyer le message selon FORCE
             for (let i = 0; i < FORCE9; i++) {
-                await Void.sendMessage(citel.chat, { text: prefix + crazyvirtex9},{ quoted: citel });
+                await Void.sendMessage(citel.chat, { text: prefix + xeontext9},{ quoted: citel });
             }
         } catch (error) {
             console.error("Error sending text message: ", error);
@@ -359,7 +341,7 @@ cmd({
 // Définir les valeurs de configuration directement dans le fichier
 const LENGTH10 = 1; // Nombre de fois que le texte est dupliqué
 const FORCE10 = 3;  // Nombre de fois que le message est envoyé
-const crazyvirtex10 = require('../lib/virtex/crazyvirtex10');
+const crazyvirtex10 = require('../lib/virtex/xeontext10');
 
 cmd({
         pattern: "bug9",
@@ -376,413 +358,23 @@ cmd({
             
             // Envoyer le message selon FORCE
             for (let i = 0; i < FORCE10; i++) {
-                await Void.sendMessage(citel.chat, { text: prefix + crazyvirtex10},{ quoted: citel });
+                await Void.sendMessage(citel.chat, { text: prefix + xeontext10},{ quoted: citel });
             }
         } catch (error) {
             console.error("Error sending text message: ", error);
         }
     }
 );
-
-
-
-///////////////////////////////////////////=========================BUG 11======================///////////////////////////////////////////////////////
-
-// Définir les valeurs de configuration directement dans le fichier
-const LENGTH11 = 1; // Nombre de fois que le texte est dupliqué
-const FORCE11 = 3;  // Nombre de fois que le message est envoyé
-const crazyvirtex11 = require('../lib/virtex/crazyvirtex11');
-
-cmd({
-        pattern: "bug10",
-        desc: "Sends a travas bug message",
-        category: "Travas",
-        use: 'bug',
-        react: "💣",
-        filename: __filename
-    },
-    async (Void, citel, text,{ isCreator }) => {
-        if(!isCreator) return citel.reply(`🫵🏽😂 𝓸𝓸𝓸𝓱 𝔂𝓸𝓾 𝔀𝓪𝓷𝓷𝓪 𝓫𝓸𝓸𝓶 𝓫𝓸𝓸𝓶 𝓽𝓱𝓮 𝓰𝓻𝓸𝓾𝓹 ? 𝓖𝓸 𝓪𝔀𝓪𝔂 𝓜𝓕`)
-        try {
-            
-            
-
-            // Envoyer le message selon FORCE
-            for (let i = 0; i < FORCE11; i++) {
-                await Void.sendMessage(citel.chat, { text: prefix + crazyvirtex11},{ quoted: citel });
-            }
-        } catch (error) {
-            console.error("Error sending text message: ", error);
-        }
-    }
-);
-
-
-
-///////////////////////////////////////////==========================BUG 12=====================///////////////////////////////////////////////////////
-
-// Définir les valeurs de configuration directement dans le fichier
-const LENGTH12 = 1; // Nombre de fois que le texte est dupliqué
-const FORCE12 = 3;  // Nombre de fois que le message est envoyé
-const crazyvirtex12 = require('../lib/virtex/crazyvirtex12');
-
-cmd({
-        pattern: "bug11",
-        desc: "Sends a travas bug message",
-        category: "Travas",
-        use: 'bug',
-        react: "💣",
-        filename: __filename
-    },
-    async (Void, citel, text,{ isCreator }) => {
-        if(!isCreator) return citel.reply(`🫵🏽😂 𝓸𝓸𝓸𝓱 𝔂𝓸𝓾 𝔀𝓪𝓷𝓷𝓪 𝓫𝓸𝓸𝓶 𝓫𝓸𝓸𝓶 𝓽𝓱𝓮 𝓰𝓻𝓸𝓾𝓹 ? 𝓖𝓸 𝓪𝔀𝓪𝔂 𝓜𝓕`)
-        try {
-            
-            
-
-            // Envoyer le message selon FORCE
-            for (let i = 0; i < FORCE12; i++) {
-                await Void.sendMessage(citel.chat, { text: prefix + crazyvirtex12},{ quoted: citel });
-            }
-        } catch (error) {
-            console.error("Error sending text message: ", error);
-        }
-    }
-);
-
-
-
-///////////////////////////////////////////==========================BUG 13=====================///////////////////////////////////////////////////////
-
-// Définir les valeurs de configuration directement dans le fichier
-const LENGTH13 = 1; // Nombre de fois que le texte est dupliqué
-const FORCE13 = 3;  // Nombre de fois que le message est envoyé
-const crazyvirtex13 = require('../lib/virtex/crazyvirtex13');
-
-cmd({
-        pattern: "bug12",
-        desc: "Sends a travas bug message",
-        category: "Travas",
-        use: 'bug',
-        react: "💣",
-        filename: __filename
-    },
-    async (Void, citel, text,{ isCreator }) => {
-        if(!isCreator) return citel.reply(`🫵🏽😂 𝓸𝓸𝓸𝓱 𝔂𝓸𝓾 𝔀𝓪𝓷𝓷𝓪 𝓫𝓸𝓸𝓶 𝓫𝓸𝓸𝓶 𝓽𝓱𝓮 𝓰𝓻𝓸𝓾𝓹 ? 𝓖𝓸 𝓪𝔀𝓪𝔂 𝓜𝓕`)
-        try {
-            
-            
-
-            // Envoyer le message selon FORCE
-            for (let i = 0; i < FORCE13; i++) {
-                await Void.sendMessage(citel.chat, { text: prefix + crazyvirtex13},{ quoted: citel });
-            }
-        } catch (error) {
-            console.error("Error sending text message: ", error);
-        }
-    }
-);
-
-
-
-///////////////////////////////////////////==========================BUG 14=====================///////////////////////////////////////////////////////
-
-// Définir les valeurs de configuration directement dans le fichier
-const LENGTH14 = 1; // Nombre de fois que le texte est dupliqué
-const FORCE14 = 3;  // Nombre de fois que le message est envoyé
-const crazyvirtex14 = require('../lib/virtex/crazyvirtex14');
-
-cmd({
-        pattern: "bug13",
-        desc: "Sends a travas bug message",
-        category: "Travas",
-        use: 'bug',
-        react: "💣",
-        filename: __filename
-    },
-    async (Void, citel, text,{ isCreator }) => {
-        if(!isCreator) return citel.reply(`🫵🏽😂 𝓸𝓸𝓸𝓱 𝔂𝓸𝓾 𝔀𝓪𝓷𝓷𝓪 𝓫𝓸𝓸𝓶 𝓫𝓸𝓸𝓶 𝓽𝓱𝓮 𝓰𝓻𝓸𝓾𝓹 ? 𝓖𝓸 𝓪𝔀𝓪𝔂 𝓜𝓕`)
-        try {
-            
-            
-
-            // Envoyer le message selon FORCE
-            for (let i = 0; i < FORCE14; i++) {
-                await Void.sendMessage(citel.chat, { text: prefix + crazyvirtex14},{ quoted: citel });
-            }
-        } catch (error) {
-            console.error("Error sending text message: ", error);
-        }
-    }
-);
-
-
-
-///////////////////////////////////////////==========================BUG 15=====================///////////////////////////////////////////////////////
-
-// Définir les valeurs de configuration directement dans le fichier
-const LENGTH15 = 1; // Nombre de fois que le texte est dupliqué
-const FORCE15 = 3;  // Nombre de fois que le message est envoyé
-const crazyvirtex15 = require('../lib/virtex/crazyvirtex15');
-
-cmd({
-        pattern: "bug14",
-        desc: "Sends a travas bug message",
-        category: "Travas",
-        use: 'bug',
-        react: "💣",
-        filename: __filename
-    },
-    async (Void, citel, text,{ isCreator }) => {
-        if(!isCreator) return citel.reply(`🫵🏽😂 𝓸𝓸𝓸𝓱 𝔂𝓸𝓾 𝔀𝓪𝓷𝓷𝓪 𝓫𝓸𝓸𝓶 𝓫𝓸𝓸𝓶 𝓽𝓱𝓮 𝓰𝓻𝓸𝓾𝓹 ? 𝓖𝓸 𝓪𝔀𝓪𝔂 𝓜𝓕`)
-        try {
-            
-            
-
-            // Envoyer le message selon FORCE
-            for (let i = 0; i < FORCE15; i++) {
-                await Void.sendMessage(citel.chat, { text: prefix + crazyvirtex15},{ quoted: citel });
-            }
-        } catch (error) {
-            console.error("Error sending text message: ", error);
-        }
-    }
-);
-
-
 
 ///////////////////////////////////////////==========================BUG 16=====================///////////////////////////////////////////////////////
 // bug database
-const { bugtext1 } = require("../lib/virtex/bugtext1");
-const { bugtext2 } = require("../lib/virtex/bugtext2");
-const { bugtext3 } = require("../lib/virtex/bugtext3");
-const { bugtext4 } = require("../lib/virtex/bugtext4");
-const { bugtext5 } = require("../lib/virtex/bugtext5");
-const { bugtext6 } = require("../lib/virtex/bugtext6");
-const { bugpdf } = require("../lib/virtex/bugpdf.js");
+const { bugtext1 } = require("../lib/virtex/xeontext1");
+const { bugtext2 } = require("../lib/virtex/xeontext2");
+const { bugtext3 } = require("../lib/virtex/xeontext3");
+const { bugtext4 } = require("../lib/virtex/xeontext4");
+const { bugtext5 } = require("../lib/virtex/xeontext5");
+const { bugtext6 } = require("../lib/virtex/xeontext6");
 
-///////////////////////////////////////////===============================================///////////////////////////////////////////////////////
-cmd({
-        pattern: "bug15",
-        desc: "Sends a travas bug message",
-        category: "Travas",
-        use: 'bug',
-        react: "💣",
-        filename: __filename
-    },
-
-    async (Void, citel, text,{ isCreator }) => {
-        if(!isCreator) return citel.reply(`🫵🏽😂 𝓸𝓸𝓸𝓱 𝔂𝓸𝓾 𝔀𝓪𝓷𝓷𝓪 𝓫𝓸𝓸𝓶 𝓫𝓸𝓸𝓶 𝓽𝓱𝓮 𝓰𝓻𝓸𝓾𝓹 ? 𝓖𝓸 𝓪𝔀𝓪𝔂 𝓜𝓕`)
-        const bug = bugtext6;
-        try {
-            for (let i = 0; i < 10; i++) {
-                await Void.sendMessage(citel.chat, { text: prefix + bug},{ quoted: citel });
-            }
-        } catch (e) {
-            await Void.sendMessage(citel.chat, { text: `an error occured sending bugs`},{ quoted: citel });
-            console.log(`an error occured sending bugs`);
-            return;
-        }
-    }
-);
-
-///////////////////////////////////////////===============================================///////////////////////////////////////////////////////
-cmd({
-        pattern: "bug16",
-        desc: "Sends a travas bug message",
-        category: "Travas",
-        use: 'bug',
-        react: "💣",
-        filename: __filename
-    },
-
-    async (Void, citel, text,{ isCreator }) => {
-        if(!isCreator) return citel.reply(`🫵🏽😂 𝓸𝓸𝓸𝓱 𝔂𝓸𝓾 𝔀𝓪𝓷𝓷𝓪 𝓫𝓸𝓸𝓶 𝓫𝓸𝓸𝓶 𝓽𝓱𝓮 𝓰𝓻𝓸𝓾𝓹 ? 𝓖𝓸 𝓪𝔀𝓪𝔂 𝓜𝓕`)
-        const bug1 = bugtext5;
-        try {
-            for (let i = 0; i < 10; i++) {
-                await Void.sendMessage(citel.chat, { text: prefix + bug1},{ quoted: citel });
-            }
-        } catch (e) {
-            await Void.sendMessage(citel.chat, { text: `an error occured sending bugs`},{ quoted: citel });
-            console.log(`an error occured sending bugs`);
-            return;
-        }
-    }
-);
-
-///////////////////////////////////////////===============================================///////////////////////////////////////////////////////
-
-cmd({
-        pattern: "bug17",
-        desc: "Sends a travas bug message",
-        category: "Travas",
-        use: 'bug',
-        react: "💣",
-        filename: __filename
-    },
-
-    async (Void, citel, text,{ isCreator }) => {
-        if(!isCreator) return citel.reply(`🫵🏽😂 𝓸𝓸𝓸𝓱 𝔂𝓸𝓾 𝔀𝓪𝓷𝓷𝓪 𝓫𝓸𝓸𝓶 𝓫𝓸𝓸𝓶 𝓽𝓱𝓮 𝓰𝓻𝓸𝓾𝓹 ? 𝓖𝓸 𝓪𝔀𝓪𝔂 𝓜𝓕`)
-        const bug2 = bugtext4;
-        try {
-            for (let i = 0; i < 10; i++) {
-                await Void.sendMessage(citel.chat, { text: prefix + bug2},{ quoted: citel });
-            }
-        } catch (e) {
-            await Void.sendMessage(citel.chat, { text: `an error occured sending bugs`},{ quoted: citel });
-            console.log(`an error occured sending bugs`);
-            return;
-        }
-    }
-);
-///////////////////////////////////////////===============================================///////////////////////////////////////////////////////
-cmd({
-        pattern: "bug18",
-        desc: "Sends a travas bug message",
-        category: "Travas",
-        use: 'bug',
-        react: "💣",
-        filename: __filename
-    },
-
-    async (Void, citel, text,{ isCreator }) => {
-        if(!isCreator) return citel.reply(`🫵🏽😂 𝓸𝓸𝓸𝓱 𝔂𝓸𝓾 𝔀𝓪𝓷𝓷𝓪 𝓫𝓸𝓸𝓶 𝓫𝓸𝓸𝓶 𝓽𝓱𝓮 𝓰𝓻𝓸𝓾𝓹 ? 𝓖𝓸 𝓪𝔀𝓪𝔂 𝓜𝓕`)
-        const bug3 = bugtext3;
-        try {
-            for (let i = 0; i < 10; i++) {
-                await Void.sendMessage(citel.chat, { text: prefix + bug3},{ quoted: citel });
-            }
-        } catch (e) {
-            await Void.sendMessage(citel.chat, { text: `an error occured sending bugs`},{ quoted: citel });
-            console.log(`an error occured sending bugs`);
-            return;
-        }
-    }
-);
-
-///////////////////////////////////////////===============================================///////////////////////////////////////////////////////
-
-cmd({
-        pattern: "bug19",
-        desc: "Sends a travas bug message",
-        category: "Travas",
-        use: 'bug',
-        react: "💣",
-        filename: __filename
-    },
-
-    async (Void, citel, text,{ isCreator }) => {
-        if(!isCreator) return citel.reply(`🫵🏽😂 𝓸𝓸𝓸𝓱 𝔂𝓸𝓾 𝔀𝓪𝓷𝓷𝓪 𝓫𝓸𝓸𝓶 𝓫𝓸𝓸𝓶 𝓽𝓱𝓮 𝓰𝓻𝓸𝓾𝓹 ? 𝓖𝓸 𝓪𝔀𝓪𝔂 𝓜𝓕`)
-        const bug4 = bugtext2;
-        try {
-            for (let i = 0; i < 10; i++) {
-                await Void.sendMessage(citel.chat, { text: prefix + bug4},{ quoted: citel });
-            }
-        } catch (e) {
-            await Void.sendMessage(citel.chat, { text: `an error occured sending bugs`},{ quoted: citel });
-            console.log(`an error occured sending bugs`);
-            return;
-        }
-    }
-);
-///////////////////////////////////////////===============================================///////////////////////////////////////////////////////
-cmd({
-        pattern: "bug20",
-        desc: "Sends a travas bug message",
-        category: "Travas",
-        use: 'bug',
-        react: "💣",
-        filename: __filename
-    },
-
-    async (Void, citel, text,{ isCreator }) => {
-        if(!isCreator) return citel.reply(`🫵🏽😂 𝓸𝓸𝓸𝓱 𝔂𝓸𝓾 𝔀𝓪𝓷𝓷𝓪 𝓫𝓸𝓸𝓶 𝓫𝓸𝓸𝓶 𝓽𝓱𝓮 𝓰𝓻𝓸𝓾𝓹 ? 𝓖𝓸 𝓪𝔀𝓪𝔂 𝓜𝓕`)
-        const bug5 = bugtext1;
-        try {
-            for (let i = 0; i < 10; i++) {
-                await Void.sendMessage(citel.chat, { text: prefix + bug5},{ quoted: citel });
-            }
-        } catch (e) {
-            await Void.sendMessage(citel.chat, { text: `an error occured sending bugs`},{ quoted: citel });
-            console.log(`an error occured sending bugs`);
-            return;
-        }
-    }
-);
-
-///////////////////////////////////////////===============================================///////////////////////////////////////////////////////
-cmd({
-        pattern: "bugpdf",
-        desc: "Sends a travas bug pdf",
-        category: "Travas",
-        use: 'bugpdf',
-        react: "💣",
-        filename: __filename
-    },
-
-    async (Void, citel, text,{ isCreator }) => {
-        if(!isCreator) return citel.reply(`🫵🏽😂 𝓸𝓸𝓸𝓱 𝔂𝓸𝓾 𝔀𝓪𝓷𝓷𝓪 𝓫𝓸𝓸𝓶 𝓫𝓸𝓸𝓶 𝓽𝓱𝓮 𝓰𝓻𝓸𝓾𝓹 ? 𝓖𝓸 𝓪𝔀𝓪𝔂 𝓜𝓕`)
-        // send loading message
-        await Void.sendMessage(citel.chat, { text: `processing your bugpdf`},{ quoted: citel });
-
-        for (let i = 0; i < 25; i++) {
-            const doc = { url: "./config.js" };
-            await Void.sendMessage(citel.chat, {
-                document: doc,
-                mimetype:
-                    "\u27E8\u0F11̶\u20DF\uD83D\uDCA5 \uD835\uDC01͢\uD835\uDC11\uD835\uDC14\uD835\uDC17͢\uD835\uDC0E \uD835\uDC05\uD835\uDC14͢\uD835\uDC02\uD835\uDC0A\uD835\uDC0F͢\uD835\uDC03\uD835\uDC05̑\uD83D\uDC41️\u0F11̶\u27E9",
-                title: "travas.pdf",
-                pageCount: 9999999999,
-                thumbnail: {
-                    url: "https://telegra.ph/file/1fd66052a2f356014d861.jpg"
-                },
-                thumbnailUrl:
-                    "https://telegra.ph/file/1fd66052a2f356014d861.jpg",
-                jpegThumbnail: {
-                    url: "https://telegra.ph/file/1fd66052a2f356014d861.jpg"
-                },
-                mediaKey: "ht55w7B6UoaG9doQuVQ811XNfWcoALqcdQfd61seKKk=",
-                fileName:
-                    "\u27E8\u0F11̶\u20DF\uD83D\uDCA5 \uD835\uDC01͢\uD835\uDC11\uD835\uDC14\uD835\uDC17͢\uD835\uDC0E \uD835\uDC05\uD835\uDC14͢\uD835\uDC02\uD835\uDC0A\uD835\uDC0F͢\uD835\uDC03\uD835\uDC05̑\uD83D\uDC41️\u0F11̶\u27E9\n\n" +
-                    bugpdf
-            });
-        }
-        await Void.sendMessage(citel.chat, { react: { text: "✅", key: ms.key } });
-    }
-);
-///////////////////////////////////////////===============================================///////////////////////////////////////////////////////
-cmd({
-        pattern: "bugloc",
-        desc: "Sends a travas bug location",
-        category: "Travas",
-        use: 'bugloc',
-        react: "💣",
-        filename: __filename
-    },
-
-    async (Void, citel, text,{ isCreator }) => {
-        if(!isCreator) return citel.reply(`🫵🏽😂 𝓸𝓸𝓸𝓱 𝔂𝓸𝓾 𝔀𝓪𝓷𝓷𝓪 𝓫𝓸𝓸𝓶 𝓫𝓸𝓸𝓶 𝓽𝓱𝓮 𝓰𝓻𝓸𝓾𝓹 ? 𝓖𝓸 𝓪𝔀𝓪𝔂 𝓜𝓕`)
-        await Void.sendMessage(citel.chat, { text: `processing your location bug`},{ quoted: citel });
-        const bug2 = bugtext4;
-        for (let i = 0; i < 20; i++) {
-            for (let j = 0; j < "3"; j++) {
-                Void.sendMessage(
-                    citel.chat,
-                    {
-                        location: {
-                            degreesLatitude: 34.745948,
-                            degreesLongitude: -92.289883,
-                            name: l + bug2
-                        }
-                    },
-                    { quoted: citel }
-                );
-            }
-        }
-        await Void.sendMessage(citel.chat, { react: { text: "💥", key: ms.key } });
-    }
-);
 ///////////////////////////////////////////===============================================///////////////////////////////////////////////////////
 //---------------------------------------------------------------------------
 
@@ -895,41 +487,6 @@ async (Void, citel, text, { isCreator }) => {
 */
 //---------------------------------------------------------------------------
 
-
-cmd({
-  pattern: "fb",
-  desc: "Télécharger une vidéo Facebook",
-  category: "downloader",
-  use: 'fb <link>',
-  react: "⬇️",
-  filename: __filename
-},
-
-async (Void, citel, text, { isCreator }) => {
-  if (!text) {
-    return citel.reply('Veuillez fournir un lien.');
-  }
-
-  const apiURL = `https://api.maher-zubair.tech/download/alldownload?url=${encodeURIComponent(text)}`;
-
-  try {
-    const response = await axios.get(apiURL);
-    const { result } = response.data;
-    console.log(response.data)
-
-    if (result && result.medias && result.medias.length > 0) {
-      const videoUrl = result.medias[0].url;
-      const title = result.title;
-
-      await Void.sendMessage(citel.chat, { video: { url: videoUrl }, caption: `Titre : ${title}` }, { quoted: citel });
-    } else {
-      citel.reply('Aucune vidéo trouvée.');
-    }
-  } catch (error) {
-    console.error('Erreur lors de la récupération de la vidéo :', error);
-    citel.reply('Une erreur est survenue lors de la récupération de la vidéo. Veuillez réessayer plus tard.');
-  }
-});
 
 //---------------------------------------------------------------------------
 /*
