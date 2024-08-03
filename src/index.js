@@ -68,13 +68,13 @@ async function downloadSessionData() {
         console.error('Please add your session to SESSION_ID env !!');
         process.exit(1);
     }
-    const sessdata = config.SESSION_ID.split("Imalka-MD&")[1];
+    const sessdata = config.SESSION_ID.split("Ethix-MD&")[1];
     const url = `https://pastebin.com/raw/${sessdata}`;
     try {
         const response = await axios.get(url);
         const data = typeof response.data === 'string' ? response.data : JSON.stringify(response.data);
         await fs.promises.writeFile(credsPath, data);
-        console.log("💞 Session Successfully Loaded !!");
+        console.log("🔒 Session Successfully Loaded !!");
     } catch (error) {
         console.error('Failed to download session data:', error);
         process.exit(1);
@@ -89,13 +89,13 @@ async function start() {
     try {
         const { state, saveCreds } = await useMultiFileAuthState(sessionDir);
         const { version, isLatest } = await fetchLatestBaileysVersion();
-        console.log(`🧬TOGE-MD-V2 using WA v${version.join('.')}, isLatest: ${isLatest}`);
+        console.log(`🤖 TOGE-MD-V2 using WA v${version.join('.')}, isLatest: ${isLatest}`);
         
         const Matrix = makeWASocket({
             version,
             logger: pino({ level: 'silent' }),
             printQRInTerminal: true,
-            browser: ["hansamal", "safari", "3.3"],
+            browser: ["TOGE-MD-V2", "safari", "3.3"],
             auth: state,
             getMessage: async (key) => {
                 if (store) {
@@ -114,8 +114,8 @@ async function start() {
                 }
             } else if (connection === 'open') {
                 if (initialConnection) {
-                    console.log(chalk.green("TOGE-MD-V2 CONNECTED Successful️ ✅"));
-                    Matrix.sendMessage(Matrix.user.id, { text: `TOGE-MD-V2 CONNECTED Successful️ ✅` });
+                    console.log(chalk.green("😃 Integration Successful️ ✅"));
+                    Matrix.sendMessage(Matrix.user.id, { text: `😃 Integration Successful️ ✅` });
                     initialConnection = false;
                 } else {
                     console.log(chalk.blue("♻️ Connection reestablished after restart."));
