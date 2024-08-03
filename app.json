@@ -59,7 +59,7 @@
       "value": "𝗧𝗢𝗚𝗘-𝗠𝗗-𝗩𝟮"
     },
       "OWNER_NUMBER": {
-      "description": "The phone numbers of the users who you want to be admin for the bot (should be in international format without + and multiple numbers must be separated by a comma \",\")",
+      "description": "numbers of Bot Owner (should be in international format without + )",
       "required": true,
       "value": "24102150169" 
     }   
