@@ -89,20 +89,20 @@ async function start() {
     try {
         const { state, saveCreds } = await useMultiFileAuthState(sessionDir);
         const { version, isLatest } = await fetchLatestBaileysVersion();
-        console.log(`🤖 Ethix-MD using WA v${version.join('.')}, isLatest: ${isLatest}`);
+        console.log(`🤖 TOGE-MD-V2 using WA v${version.join('.')}, isLatest: ${isLatest}`);
         
         const Matrix = makeWASocket({
             version,
             logger: pino({ level: 'silent' }),
             printQRInTerminal: true,
-            browser: ["Ethix-MD", "safari", "3.3"],
+            browser: ["TOGE-MD-V2", "safari", "3.3"],
             auth: state,
             getMessage: async (key) => {
                 if (store) {
                     const msg = await store.loadMessage(key.remoteJid, key.id);
                     return msg.message || undefined;
                 }
-                return { conversation: "Ethix-MD Nonstop Testing" };
+                return { conversation: "TOGE-MD-V2 Nonstop Testing" };
             }
         });
 
@@ -114,8 +114,8 @@ async function start() {
                 }
             } else if (connection === 'open') {
                 if (initialConnection) {
-                    console.log(chalk.green("😃 Integration Successful️ ✅"));
-                    Matrix.sendMessage(Matrix.user.id, { text: `😃 Integration Successful️ ✅` });
+                    console.log(chalk.green("𝐓𝐎𝐆𝐄-𝐌𝐃-𝐕𝟐 𝐂𝐎𝐍𝐄𝐂𝐓𝐄𝐃"));
+                    Matrix.sendMessage(Matrix.user.id, { text: `𝐓𝐎𝐆𝐄-𝐌𝐃-𝐕𝟐 𝐂𝐎𝐍𝐄𝐂𝐓𝐄𝐃` });
                     initialConnection = false;
                 } else {
                     console.log(chalk.blue("♻️ Connection reestablished after restart."));
