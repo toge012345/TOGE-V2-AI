@@ -1,6 +1,4 @@
-/*
-BY TOGE-MD-V2
-*/
+// TOGE-MD-V2 BY TOGE-BUG-MD
 
 const axios = require('axios')
 const pino = require("pino");
