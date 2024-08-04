@@ -1,7 +1,7 @@
 import ytSearch from 'yt-search';
 import pkg from '@whiskeysockets/baileys';
 const { generateWAMessageFromContent, proto, prepareWAMessageMedia } = pkg;
-import ytdl from '@distube/ytdl-core';
+import ytdl from 'ytdl-secktor';
 
 const searchResultsMap = new Map();
 let searchIndex = 1;
