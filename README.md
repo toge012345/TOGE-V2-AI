@@ -190,12 +190,15 @@ Misusing the bot may result in a ban from WhatsApp. Use at your own risk.
 
 
 ## Do you need help
+___
 This is the section that provides help. 
-- [JOIN CHANNEL FOR UPDATES](https://whatsapp.com/channel/0029VaiuD4s4IBhI0fzbv40Z) 
-- [MESSAGE DEVELOPER](https://wa.me/+24102150169) 
+- [JOIN GROUP FOR UPDATES](https://chat.whatsapp.com/JQ4s2pJuBReE7YL9wKJPHo) 
+- [MESSAGE DEVELOPER](https://wa.me/+24105114159)
 
-
-
+### main dev
+___
+***thanks to [Ethix-Xsid](https://github.com/Ethix-Xsid) for base***
+***fork and starts [Ethix-MD](https://github.com/Ethix-Xsid/Ethix-MD)***
 
 
 
