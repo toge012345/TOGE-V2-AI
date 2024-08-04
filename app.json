@@ -51,17 +51,7 @@
     "REJECT_CALL": {
       "description": "make it true if you want to reject call",
       "required": false,
-      "value": "false"
-    },
-      "OWNER_NAME": {
-      "description": "Name of Bot Owner",
-      "required": true,
-      "value": "𝗧𝗢𝗚𝗘-𝗠𝗗-𝗩𝟮"
-    },
-      "OWNER_NUMBER": {
-      "description": "numbers of Bot Owner (should be in international format without + )",
-      "required": true,
-      "value": "24102150169" 
+      "value": "false"  
     }   
     },
     "buildpacks": [
