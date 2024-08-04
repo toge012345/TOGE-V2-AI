@@ -1,1 +1,2 @@
-web: npm i pm2 -g && pm2 install ffmpeg && pm2 start src/index.js --deep-monitoring --attach --name TOGE-MD-V2
+web: npm start
+worker: node .
