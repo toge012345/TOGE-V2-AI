@@ -194,7 +194,7 @@ let mode = ethix.public ? 'public' : 'private';
                   forwardingScore: 999,
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                  newsletterJid: '120363749960769123@newsletter',
+                  newsletterJid: '1203632993333611780@newsletter',
                   newsletterName: "TOGE-MD-V2",
                   serverMessageId: 143
                 }
@@ -395,7 +395,7 @@ let mode = ethix.public ? 'public' : 'private';
                   forwardingScore: 999,
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                  newsletterJid: '120463249960769123@newsletter',
+                  newsletterJid: '1203632993333611780@newsletter',
                   newsletterName: "TOGE-MD-V2",
                   serverMessageId: 143
                 }
@@ -434,7 +434,7 @@ await Matrix.sendMessage(m.from, {
                   forwardingScore: 999,
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                  newsletterJid: '140363249960769123@newsletter',
+                  newsletterJid: '1203632993333611780@newsletter',
                   newsletterName: "TOGE-MD-V2",
                   serverMessageId: 143
                 }
@@ -500,7 +500,7 @@ await Matrix.sendMessage(m.from, {
                   forwardingScore: 999,
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                  newsletterJid: '120463249960769123@newsletter',
+                  newsletterJid: '1203632993333611780@newsletter',
                   newsletterName: "TOGE-MD-V2",
                   serverMessageId: 143
                 }
@@ -537,7 +537,7 @@ await Matrix.sendMessage(m.from, {
                   forwardingScore: 999,
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                  newsletterJid: '120463249960769123@newsletter',
+                  newsletterJid: '1203632993333611780@newsletter',
                   newsletterName: "TOGE-MD-V2",
                   serverMessageId: 143
                 }
@@ -573,7 +573,7 @@ await Matrix.sendMessage(m.from, {
                   forwardingScore: 999,
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                  newsletterJid: '120463249960769123@newsletter',
+                  newsletterJid: '1203632993333611780@newsletter',
                   newsletterName: "TOGE-MD-V2",
                   serverMessageId: 143
                 }
@@ -600,7 +600,7 @@ await Matrix.sendMessage(m.from, {
                   forwardingScore: 999,
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                  newsletterJid: '120463249960769123@newsletter',
+                  newsletterJid: '',
                   newsletterName: "TOGE-MD-V2",
                   serverMessageId: 143
                 }
@@ -630,7 +630,7 @@ await Matrix.sendMessage(m.from, {
                   forwardingScore: 999,
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                  newsletterJid: '120463249960769123@newsletter',
+                  newsletterJid: '1203632993333611780@newsletter',
                   newsletterName: "TOGE-MD-V2",
                   serverMessageId: 143
                 }
@@ -662,7 +662,7 @@ await Matrix.sendMessage(m.from, {
                   forwardingScore: 999,
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                  newsletterJid: '120463249960769123@newsletter',
+                  newsletterJid: '1203632993333611780@newsletter',
                   newsletterName: "TOGE-MD-V2",
                   serverMessageId: 143
                 }
@@ -694,7 +694,7 @@ await Matrix.sendMessage(m.from, {
                   forwardingScore: 999,
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                  newsletterJid: '120463249960769123@newsletter',
+                  newsletterJid: '1203632993333611780@newsletter',
                   newsletterName: "TOGE-MD-V2",
                   serverMessageId: 143
                 }
