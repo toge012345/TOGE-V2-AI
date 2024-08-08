@@ -20,7 +20,7 @@ const config = {
   MODE: process.env.MODE || "public",
   OWNER_NAME: process.env.OWNER_NAME || "𝗧𝗢𝗚𝗘-𝗠𝗗-𝗩𝟮",
   OWNER_NUMBER: process.env.OWNER_NUMBER || "24102150169",
-  GEMINI_KEY: process.env.GEMINI_KEY || "",
+  GEMINI_KEY: process.env.GEMINI_KEY || "AIzaSyCUPaxfIdZawsKZKqCqJcC-GWiQPCXKTDc",
   WELCOME: process.env.WELCOME !== undefined ? process.env.WELCOME === 'true' : false, 
   YTDL_NO_UPDATE: process.env.YTDL_NO_UPDATE !== undefined ? process.env.YTDL_NO_UPDATE === 'true' : true,
 };
