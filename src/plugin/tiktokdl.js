@@ -55,14 +55,14 @@ const tiktokCommand = async (m, Matrix) => {
           "name": "quick_reply",
           "buttonParamsJson": JSON.stringify({
             display_text: "🎦 Video",
-            id: `media_video_${searchIndex}`
+            id: `mediaa_video_${searchIndex}`
           })
         },
         {
           "name": "quick_reply",
           "buttonParamsJson": JSON.stringify({
             display_text: "🎵 Audio",
-            id: `media_audio_${searchIndex}`
+            id: `mediaa_audio_${searchIndex}`
           })
         }
       ];
@@ -113,7 +113,7 @@ const tiktokCommand = async (m, Matrix) => {
       await m.React("❌");
     }
   } else if (selectedId) { 
-    if (selectedId.startsWith('media_')) {
+    if (selectedId.startsWith('mediaa_')) {
       const parts = selectedId.split('_');
       const type = parts[1];
       const key = parseInt(parts[2]);
@@ -136,9 +136,9 @@ const tiktokCommand = async (m, Matrix) => {
           const fileSizeInMB = finalMediaBuffer.length / (1024 * 1024);
 
           if (type === 'video' && fileSizeInMB <= 300) {
-            content = { video: finalMediaBuffer, mimetype: 'video/mp4', caption: '> © Powered by 𝞢𝙏𝞖𝞘𝞦-𝞛𝘿' };
+            content = { video: finalMediaBuffer, mimetype: 'video/mp4', caption: '> 𝐆𝐄𝐍𝐄𝐑𝐀𝐓𝐄𝐃 𝐁𝐘 𝐓𝐎𝐆𝐄-𝐌𝐃-𝐕𝟐' };
           } else if (type === 'audio' && fileSizeInMB <= 300) {
-            content = { audio: finalMediaBuffer, mimetype: 'audio/mpeg', caption: '> © Powered by 𝞢𝙏𝞖𝞘𝞦-𝞛𝘿' };
+            content = { audio: finalMediaBuffer, mimetype: 'audio/mpeg', caption: '> 𝐆𝐄𝐍𝐄𝐑𝐀𝐓𝐄𝐃 𝐁𝐘 𝐓𝐎𝐆𝐄-𝐌𝐃-𝐕𝟐' };
           }
 
           await Matrix.sendMessage(m.from, content, { quoted: m });
@@ -159,3 +159,4 @@ const getStreamBuffer = async (url) => {
 };
 
 export default tiktokCommand;
+    
