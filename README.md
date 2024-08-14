@@ -14,7 +14,7 @@
 
 
 ### ℹ️ **About TOGE-MD-V2**
-TOGE-MD-V2 is a Cool Multi-Device WhatsApp bot developed by [toge012345](https://github.com/toge012345). It offers a wide range of extraordinary features, making it an advanced and user-friendly bot for various purposes.
+TOGE-MD-V2 is a Cool Multi-Device WhatsApp bot developed by [TOGE INUMAKI](https://github.com/toge012345). It offers a wide range of extraordinary features, making it an advanced and user-friendly bot for various purposes.
 
 <p align="center"><img src="https://profile-counter.glitch.me/{TOGE-MD-V2}/count.svg" alt="toge012345 :: Visitor's Count" /></p>
 
@@ -201,4 +201,4 @@ This is the section that provides help.
 
 
 ## `💀DEVELOPER💀` 
-<a href="https://github.com/toge012345"><img src="https://github.com/toge012345.png" width="250" height="250" alt="Xcelsama"/></a>
+<a href="https://github.com/toge012345"><img src="https://github.com/toge012345.png" width="250" height="250" alt="toge012345"/></a>
