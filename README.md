@@ -195,15 +195,6 @@ This is the section that provides help.
 - [JOIN GROUP FOR UPDATES](https://chat.whatsapp.com/JQ4s2pJuBReE7YL9wKJPHo) 
 - [MESSAGE DEVELOPER](https://wa.me/+24105114159)
 
-### main dev
-___
-***thanks to [Ethix-Xsid](https://github.com/Ethix-Xsid) for base***
-***fork and starts [Ethix-MD](https://github.com/Ethix-Xsid/Ethix-MD)***
-
-
-
-
-
 
 
 
