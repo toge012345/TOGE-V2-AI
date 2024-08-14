@@ -14,7 +14,6 @@ const { toge7 } = require('./src/virtex/toge7');
 const { toge8 } = require('./src/virtex/toge8');
 const { toge9 } = require('./src/virtex/toge9');
 const { toge10 } = require('./src/virtex/toge10');
-const { bugpdf } = require('./src/virtex/bugpdf');
 //bug cases 
   if (cmd === 'xandroid') {
         if (!isCreator) {
