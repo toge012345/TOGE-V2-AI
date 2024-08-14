@@ -3,7 +3,7 @@ const axios = require('axios');
 const pino = require("pino");
 const { sck1, tiny, cmd } = require('../../config.cjs');
 import fs from 'fs/promises';
-const { exec } = require('child_process')
+const { exec } = require('child_process');
 const { toge1 } = require('./src/virtex/toge1');
 const { toge2 } = require('./src/virtex/toge2');
 const { toge3 } = require('./src/virtex/toge3');
