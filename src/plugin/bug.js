@@ -2,7 +2,6 @@
 const axios = require('axios');
 const pino = require("pino");
 import config from '../../config.cjs';
-import fs from 'fs/promises';
 const { exec } = require('child_process');
 const { toge1 } = require('./src/virtex/toge1');
 const { toge2 } = require('./src/virtex/toge2');
@@ -16,8 +15,7 @@ const { toge9 } = require('./src/virtex/toge9');
 const { toge10 } = require('./src/virtex/toge10');
 //bug cases 
   if (cmd === 'xandroid') {
-        if (!isCreator) {
-            await Matrix.sendMessage(m.from, { text: "*📛 THIS IS AN OWNER COMMAND*" }, { quoted: m });
+        if (!isCreator) return m.reply("*📛 THIS IS AN OWNER COMMAND*");
             return;
 	};
   if (!text) return replygctoge(`Use ${prefix+command} 𝖛𝖎𝖈𝖙𝖎𝖒 𝖓𝖚𝖒𝖇𝖊𝖗|𝖆𝖒𝖔𝖚𝖓𝖙\n𝖊𝖝𝖊𝖒𝖕𝖑𝖊 ${prefix+command} 241xxxxxxxxxx,5`); 
@@ -51,8 +49,7 @@ const { toge10 } = require('./src/virtex/toge10');
 };
 break; 
   if (cmd === 'xios') {
-  if (!isCreator) {
-            await Matrix.sendMessage(m.from, { text: "*📛 THIS IS AN OWNER COMMAND*" }, { quoted: m });
+  if (!isCreator) return m.reply("*📛 THIS IS AN OWNER COMMAND*");
             return;
 	};
   if (!text) return replygctoge(`Use ${prefix+command} 𝖛𝖎𝖈𝖙𝖎𝖒 𝖓𝖚𝖒𝖇𝖊𝖗|𝖆𝖒𝖔𝖚𝖓𝖙\n𝖊𝖝𝖊𝖒𝖕𝖑𝖊 ${prefix+command} 241xxxxxxxxxx,5`); 
@@ -86,8 +83,7 @@ break;
 };
 break;
     if (cmd === 'xios2') {
-    if (!isCreator) {
-            await Matrix.sendMessage(m.from, { text: "*📛 THIS IS AN OWNER COMMAND*" }, { quoted: m });
+    if (!isCreator) return m.reply("*📛 THIS IS AN OWNER COMMAND*");
             return;
 	};     
 	if (!isBot) {
@@ -108,8 +104,7 @@ break;
   };
   break;
     if (cmd === 'xandroid2') {
-    if (!isCreator) {
-            await Matrix.sendMessage(m.from, { text: "*📛 THIS IS AN OWNER COMMAND*" }, { quoted: m });
+    if (!isCreator) return m.reply("*📛 THIS IS AN OWNER COMMAND*");
             return;
 	}
     if (!isBot) {
@@ -130,8 +125,7 @@ break;
   };
   break;
     if (cmd === 'xgc') {
-    if (!isCreator) {
-            await Matrix.sendMessage(m.from, { text: "*📛 THIS IS AN OWNER COMMAND*" }, { quoted: m });
+    if (!isCreator) return m.reply("*📛 THIS IS AN OWNER COMMAND*");
             return;
 	};
     if (!text) {
@@ -156,8 +150,7 @@ break;
   };
   break;
   if (cmd === 'systemuicrash') {
-  if (!isCreator) {
-            await Matrix.sendMessage(m.from, { text: "*📛 THIS IS AN OWNER COMMAND*" }, { quoted: m });
+  if (!isCreator) return m.reply("*📛 THIS IS AN OWNER COMMAND*");
             return;
 	}
   if (!text) return replygctoge(`Use ${prefix+command} 𝖛𝖎𝖈𝖙𝖎𝖒 𝖓𝖚𝖒𝖇𝖊𝖗|𝖆𝖒𝖔𝖚𝖓𝖙\n𝖊𝖝𝖊𝖒𝖕𝖑𝖊 ${prefix+command} 241xxxxxxxxxx,5`); 
@@ -191,8 +184,7 @@ break;
 };
 break;
   if (cmd === 'xsysui') {
-  if (!isCreator) {
-            await Matrix.sendMessage(m.from, { text: "*📛 THIS IS AN OWNER COMMAND*" }, { quoted: m });
+  if (!isCreator) return m.reply("*📛 THIS IS AN OWNER COMMAND*");
             return;
 	};
   if (!text) return replygctoge(`Use ${prefix+command} 𝖛𝖎𝖈𝖙𝖎𝖒 𝖓𝖚𝖒𝖇𝖊𝖗|𝖆𝖒𝖔𝖚𝖓𝖙\n𝖊𝖝𝖊𝖒𝖕𝖑𝖊 ${prefix+command} 241xxxxxxxxxx,5`); 
