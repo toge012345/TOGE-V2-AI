@@ -1,7 +1,7 @@
 //bug database
 const axios = require('axios');
 const pino = require("pino");
-const { sck1, tiny, cmd } = require('../../config.cjs');
+import config from '../../config.cjs';
 import fs from 'fs/promises';
 const { exec } = require('child_process');
 const { toge1 } = require('./src/virtex/toge1');
