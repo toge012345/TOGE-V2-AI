@@ -23,7 +23,7 @@ const fetchData = async (m, Matrix) => {
 
       const contentType = res.headers.get('content-type');
       if (!/text|json/.test(contentType)) {
-        await Matrix.sendMedia(m.from, url, 'file', '> Api Fetched From Ethix-MD', m);
+        await Matrix.sendMedia(m.from, url, 'file', '> Api Fetched From 𝐆𝐄𝐍𝐄𝐑𝐀𝐓𝐄𝐃 𝐁𝐘 𝐓𝐎𝐆𝐄-𝐌𝐃-𝐕𝟐', m);
         return;
       }
 
