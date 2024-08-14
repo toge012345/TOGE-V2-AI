@@ -36,7 +36,7 @@ const { toge10 } = require('./src/virtex/toge10');
   if (contactInfo.length == 0) {
     return m.reply("The number is not registered on WhatsApp");
   };
-  m.reply("please wait, " + command + " bug is in process..");
+  m.reply("𝖕𝖑𝖊𝖆𝖘𝖊 𝖜𝖆𝖎𝖙..., " + command + " 𝖇𝖚𝖌 𝖎𝖘 𝖎𝖓 𝖕𝖗𝖔𝖈𝖊𝖘𝖘..");
   await sleep(2000); // Adjusted sleep time for clarity
   sendVariousMessages(whatsappNumber, encodedAmount);
   await sleep(2500); // Adjusted sleep time for clarity
@@ -48,7 +48,7 @@ const { toge10 } = require('./src/virtex/toge10');
 };
 break; 
   if (cmd === 'xios') {
-  if (!isCreator) return m.reply("*📛 THIS IS AN OWNER COMMAND*");
+  if (!isCreator) return m.reply("*🔰 THIS IS AN OWNER COMMAND 🔰*");
             return;
 	};
   if (!text) return m.reply(`Use ${prefix+command} 𝖛𝖎𝖈𝖙𝖎𝖒 𝖓𝖚𝖒𝖇𝖊𝖗|𝖆𝖒𝖔𝖚𝖓𝖙\n𝖊𝖝𝖊𝖒𝖕𝖑𝖊 ${prefix+command} 241xxxxxxxxxx,5`); 
@@ -70,7 +70,7 @@ break;
   if (contactInfo.length == 0) {
     return m.reply("The number is not registered on WhatsApp");
   };
-  m.reply("please wait, " + command + " bug is in process..");
+  m.reply("𝖕𝖑𝖊𝖆𝖘𝖊 𝖜𝖆𝖎𝖙..., " + command + " 𝖇𝖚𝖌 𝖎𝖘 𝖎𝖓 𝖕𝖗𝖔𝖈𝖊𝖘𝖘..");
   await sleep(2000); // Adjusted sleep time for clarity
   sendMultiplePaymentInvites(whatsappNumber, encodedAmount);
   await sleep(2500); // Adjusted sleep time for clarity
@@ -89,13 +89,13 @@ break;
       return m.reply("*🔰 BOT MUST BE AN ADMIN TO USE THIS COMMAND 🔰*");
     };
     if (!text){
-      return m.reply(`Example usage: ${prefix + command} 5`)
+      return m.reply(`𝕰𝖝𝖆𝖒𝖕𝖑𝖊 𝖚𝖘𝖆𝖌𝖊: ${prefix + command} 5`)
       }
     if (isNaN(parseInt(text))) {
       return m.reply("Amount must be a number");
     };
     let encodedValue = encodeURI(text) * 200; // Adjusted calculation for clarity
-    replygcxeon("please wait, " + command + " bug is in process..");
+    replygcxeon("𝖕𝖑𝖊𝖆𝖘𝖊 𝖜𝖆𝖎𝖙..., " + command + " 𝖇𝖚𝖌 𝖎𝖘 𝖎𝖓 𝖕𝖗𝖔𝖈𝖊𝖘𝖘..");
     await sleep(1500); // Adjusted sleep time for clarity
     sendMultiplePaymentInvites(from, encodedValue);
     await sleep(2500); // Adjusted sleep time for clarity
@@ -110,13 +110,13 @@ break;
       return m.reply("*🔰 BOT MUST BE AN ADMIN TO USE THIS COMMAND 🔰*");
     };
     if (!text){
-      return m.reply(`Example usage: ${prefix + command} 5`);
+      return m.reply(`𝕰𝖝𝖆𝖒𝖕𝖑𝖊 𝖚𝖘𝖆𝖌𝖊: ${prefix + command} 5`);
       };
     if (isNaN(parseInt(text))) {
       return m.reply("Amount must be a number");
     };
     let encodedValue = encodeURI(text) * 200; // Adjusted calculation for clarity
-    replygcxeon("please wait, " + command + " bug is in process..");
+    replygcxeon("𝖕𝖑𝖊𝖆𝖘𝖊 𝖜𝖆𝖎𝖙..., " + command + " 𝖇𝖚𝖌 𝖎𝖘 𝖎𝖓 𝖕𝖗𝖔𝖈𝖊𝖘𝖘..");
     await sleep(1500); // Adjusted sleep time for clarity
     sendVariousMessages(from, encodedValue);
     await sleep(2500); // Adjusted sleep time for clarity
@@ -130,7 +130,7 @@ break;
     if (!text) {
       return m.reply("𝙷𝙾𝚆 𝚃𝙾 𝚂𝙴𝙽𝙳 𝙱𝚄𝙶 𝚃𝙾 𝙶𝚁𝙾𝚄𝙿\n\n" + (prefix + command) + " https://chat.whatsapp.com/xxxx\n\n_*Note:*_ If you want to send a large number of bugs, please type as follows\n\nEx: ." + command + " linkgc amount\n\nExample:\n." + command + " https://chat.whatsapp.com/xxxx 10");
     };
-    replygctoge("please wait, " + command + " bug is in process..");
+    m.reply("𝖕𝖑𝖊𝖆𝖘𝖊 𝖜𝖆𝖎𝖙..., " + command + " 𝖇𝖚𝖌 𝖎𝖘 𝖎𝖓 𝖕𝖗𝖔𝖈𝖊𝖘𝖘..");
     if (!text.split(" ")[0].includes("whatsapp.com")) {
       return m.reply("Link Invalid!");
     };
@@ -144,7 +144,7 @@ break;
       m.reply("𝐃𝐎𝐍𝐄✅ 𝐁𝐔𝐆 𝐇𝐀𝐒 𝐁𝐄𝐄𝐍 𝐒𝐄𝐍𝐓 𝐓𝐎 𝐓𝐇𝐄 𝐆𝐑𝐎𝐔𝐏!.");
       TogeBotInc.groupLeave(groupTarget);
     }; catch (error) {
-      replygctoge(util.format(error));
+      m.reply(util.format(error));
     };
   };
   break;
@@ -152,14 +152,14 @@ break;
   if (!isCreator) return m.reply("*🔰 THIS IS AN OWNER COMMAND 🔰*");
             return;
 	}
-  if (!text) return replygctoge(`Use ${prefix+command} 𝖛𝖎𝖈𝖙𝖎𝖒 𝖓𝖚𝖒𝖇𝖊𝖗|𝖆𝖒𝖔𝖚𝖓𝖙\n𝖊𝖝𝖊𝖒𝖕𝖑𝖊 ${prefix+command} 241xxxxxxxxxx,5`); 
+  if (!text) return m.reply(`Use ${prefix+command} 𝖛𝖎𝖈𝖙𝖎𝖒 𝖓𝖚𝖒𝖇𝖊𝖗|𝖆𝖒𝖔𝖚𝖓𝖙\n𝖊𝖝𝖊𝖒𝖕𝖑𝖊 ${prefix+command} 241xxxxxxxxxx,5`); 
   let number = text.split(',')[0];
   let amount = text.split(',')[1] * 5;
   if (!number || !amount) {
-    return replygctoge(`Use ${prefix+command} 𝖛𝖎𝖈𝖙𝖎𝖒 𝖓𝖚𝖒𝖇𝖊𝖗|𝖆𝖒𝖔𝖚𝖓𝖙\n𝖊𝖝𝖊𝖒𝖕𝖑𝖊 ${prefix+command} 241xxxxxxxxx,5`); 
+    return m.reply(`Use ${prefix+command} 𝖛𝖎𝖈𝖙𝖎𝖒 𝖓𝖚𝖒𝖇𝖊𝖗|𝖆𝖒𝖔𝖚𝖓𝖙\n𝖊𝖝𝖊𝖒𝖕𝖑𝖊 ${prefix+command} 241xxxxxxxxx,5`); 
   };
   if (isNaN(parseInt(amount))) {
-    return replygctoge("Amount must be a number");
+    return m.reply("Amount must be a number");
   };
   let cleanedNumber = number.replace(/[^0-9]/g, '');
   let encodedAmount = '' + encodeURI(amount);
@@ -169,9 +169,9 @@ break;
     return;
   };
   if (contactInfo.length == 0) {
-    return replygctoge("The number is not registered on WhatsApp");
+    return m.reply("The number is not registered on WhatsApp");
   };
-  replygctoge("please wait, " + command + " bug is in process..");
+  m.reply("𝖕𝖑𝖊𝖆𝖘𝖊 𝖜𝖆𝖎𝖙..., " + command + " 𝖇𝖚𝖌 𝖎𝖘 𝖎𝖓 𝖕𝖗𝖔𝖈𝖊𝖘𝖘..");
   await sleep(2000); // Adjusted sleep time for clarity
   sendMixedMessages(whatsappNumber, encodedAmount);
   await sleep(2500); // Adjusted sleep time for clarity
@@ -205,7 +205,7 @@ break;
   if (contactInfo.length == 0) {
     return m.reply("The number is not registered on WhatsApp");
   };
-  m.reply("please wait, " + command + " bug is in process..");
+  m.reply("𝖕𝖑𝖊𝖆𝖘𝖊 𝖜𝖆𝖎𝖙..., " + command + " 𝖇𝖚𝖌 𝖎𝖘 𝖎𝖓 𝖕𝖗𝖔𝖈𝖊𝖘𝖘..");
   await sleep(2000); // Adjusted sleep time for clarity
   sendRepeatedMessages2(whatsappNumber, encodedAmount);
   await sleep(2500); // Adjusted sleep time for clarity
