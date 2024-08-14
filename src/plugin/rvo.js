@@ -22,7 +22,7 @@ const rvo = async (m, sock) => {
     const type = Object.keys(msg)[0];
     
     const originalCaption = msg[type].caption || '';
-    const newCaption = `${originalCaption}\n\n> © Powered By Ethix-MD`;
+    const newCaption = `${originalCaption}\n\n> 𝐆𝐄𝐍𝐄𝐑𝐀𝐓𝐄𝐃 𝐁𝐘 𝐓𝐎𝐆𝐄-𝐌𝐃-𝐕𝟐`;
 
 
     // Download the media content
