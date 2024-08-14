@@ -1,5 +1,5 @@
 //bug database
-import config from '../../config.cjs';
+import virtex from './src/virtex';
 const bugCommand = async (m, gss) => {
 const prefixMatch = m.body.match(/^[\\/!#.]/);
 const prefix = prefixMatch ? prefixMatch[0] : '/';
