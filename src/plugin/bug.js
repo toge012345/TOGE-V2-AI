@@ -12,7 +12,13 @@ const { toge7 } = require('./src/virtex/toge7');
 const { toge8 } = require('./src/virtex/toge8');
 const { toge9 } = require('./src/virtex/toge9');
 const { toge10 } = require('./src/virtex/toge10');
-//bug cases 
+const bugCommand = async (m, Matrix) => {
+    const botNumber = await Matrix.decodeJid(Matrix.user.id);
+    const isCreator = [botNumber, config.OWNER_NUMBER + '@s.whatsapp.net'].includes(m.sender);
+    const prefixMatch = m.body.match(/^[\\/!#.]/);
+    const prefix = prefixMatch ? prefixMatch[0] : '/';
+    const cmd = m.body.startsWith(prefix) ? m.body.slice(prefix.length).split(' ')[0].toLowerCase() : '';
+    const text = m.body.slice(prefix.length + cmd.length).trim().toLowerCase(); 
   if (cmd === 'xandroid') {
         if (!isCreator) return m.reply("*🔰 THIS IS AN OWNER COMMAND 🔰*");
             return;
@@ -219,10 +225,12 @@ break;
 case 'clearall': {
 if (!isCreator) return m.reply("*🔰 THIS IS AN OWNER COMMAND 🔰*")
 TogeBotInc.chatModify({ delete: true, lastMessages: [{ key: m.key, messageTimestamp: m.messageTimestamp }] }, m.chat);
-}
+};
 break
 case 'clearchat':
 m.togeimun('\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n');
 break
-});
+   }  
+ }
+};
 export default bugCommand;
