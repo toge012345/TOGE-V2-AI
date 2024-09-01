@@ -1,1 +1,165 @@
-const _0x31d80e=_0x14ee;(function(_0x202c55,_0x6cee37){const _0x16a6e2=_0x14ee,_0x4c5a21=_0x202c55();while(!![]){try{const _0xf64ffe=-parseInt(_0x16a6e2(0x22b))/0x1*(-parseInt(_0x16a6e2(0x202))/0x2)+-parseInt(_0x16a6e2(0x222))/0x3+-parseInt(_0x16a6e2(0x208))/0x4*(-parseInt(_0x16a6e2(0x22e))/0x5)+parseInt(_0x16a6e2(0x206))/0x6+parseInt(_0x16a6e2(0x22a))/0x7*(parseInt(_0x16a6e2(0x207))/0x8)+-parseInt(_0x16a6e2(0x210))/0x9*(parseInt(_0x16a6e2(0x1fa))/0xa)+parseInt(_0x16a6e2(0x1f5))/0xb*(parseInt(_0x16a6e2(0x220))/0xc);if(_0xf64ffe===_0x6cee37)break;else _0x4c5a21['push'](_0x4c5a21['shift']());}catch(_0xea52c6){_0x4c5a21['push'](_0x4c5a21['shift']());}}}(_0x111e,0x610e0));import _0x5e0666 from'dotenv';_0x5e0666[_0x31d80e(0x223)]();import{makeWASocket,Browsers,fetchLatestBaileysVersion,DisconnectReason,useMultiFileAuthState}from'@whiskeysockets/baileys';import{Handler,Callupdate,GroupUpdate}from'./src/event/index.js';import _0x43325b from'express';import _0x1b698a from'pino';import _0x8be24b from'fs';import _0x2ff1f1 from'node-cache';import _0x3e2022 from'path';import _0x19bcbf from'chalk';function _0x111e(){const _0x503730=['output','url','private','creds.json','451iaLniO','safari','creds.update','level','session','470WXJSPM','Error\x20during\x20auto\x20reaction:','3.3','silent','🔒\x20Session\x20Successfully\x20Loaded\x20!!','dirname','MODE','data','4780QeMZxd','toJSON','promises','🔒\x20Session\x20file\x20found,\x20proceeding\x20without\x20QR\x20code.','92154dIeDNA','184eEdfDy','1384klEpIi','exit','pathname','key','stringify','error','𝐓𝐎𝐆𝐄-𝐌𝐃-𝐕𝟐\x20𝐂𝐎𝐍𝐄𝐂𝐓𝐄𝐃','https://pastebin.com/raw/','1251mzTqRl','🔒\x20Session\x20downloaded,\x20starting\x20bot.','trace','log','fromMe','child',',\x20isLatest:\x20','Ethix-MD&','existsSync','No\x20session\x20found\x20or\x20downloaded,\x20QR\x20code\x20will\x20be\x20printed\x20for\x20authentication.','send','Critical\x20Error:','TOGE-MD-V2','call','public','join','167448VlDRPj','random','1769904NwsxFj','config','open','messages.upsert','#FFA500','string','bold','length','53830eIxYLd','34RDYUEQ','env','hex','2145NjskJJ','PORT','AUTO_REACT','floor','get','♻️\x20Connection\x20reestablished\x20after\x20restart.','messages','loggedOut','writeFile','SESSION_ID','split','🤖\x20TOGE-MD-V2\x20using\x20WA\x20v','close','Hello\x20World!'];_0x111e=function(){return _0x503730;};return _0x111e();}import _0x154479 from'moment-timezone';import _0x399b0f from'axios';import _0x56de9e from'./config.cjs';import _0xd900e9 from'./lib/autoreact.cjs';const {emojis,doReact}=_0xd900e9,sessionName=_0x31d80e(0x1f9),app=_0x43325b(),orange=_0x19bcbf[_0x31d80e(0x228)][_0x31d80e(0x22d)](_0x31d80e(0x226)),lime=_0x19bcbf[_0x31d80e(0x228)]['hex']('#32CD32');let useQR=![],initialConnection=!![];const PORT=process[_0x31d80e(0x22c)][_0x31d80e(0x22f)]||0xbb8,MAIN_LOGGER=_0x1b698a({'timestamp':()=>',\x22time\x22:\x22'+new Date()[_0x31d80e(0x203)]()+'\x22'}),logger=MAIN_LOGGER[_0x31d80e(0x215)]({});logger[_0x31d80e(0x1f8)]=_0x31d80e(0x212);const msgRetryCounterCache=new _0x2ff1f1(),__filename=new URL(import.meta[_0x31d80e(0x23d)])[_0x31d80e(0x20a)],__dirname=_0x3e2022[_0x31d80e(0x1ff)](__filename),sessionDir=_0x3e2022[_0x31d80e(0x21f)](__dirname,_0x31d80e(0x1f9)),credsPath=_0x3e2022['join'](sessionDir,_0x31d80e(0x1f4));!_0x8be24b['existsSync'](sessionDir)&&_0x8be24b['mkdirSync'](sessionDir,{'recursive':!![]});async function downloadSessionData(){const _0x159a1b=_0x31d80e;if(!_0x56de9e[_0x159a1b(0x237)])return console[_0x159a1b(0x20d)]('Please\x20add\x20your\x20session\x20to\x20SESSION_ID\x20env\x20!!'),![];const _0x19f26f=_0x56de9e[_0x159a1b(0x237)][_0x159a1b(0x238)](_0x159a1b(0x217))[0x1],_0x4f712f=_0x159a1b(0x20f)+_0x19f26f;try{const _0x1baca2=await _0x399b0f[_0x159a1b(0x232)](_0x4f712f),_0x2ea92c=typeof _0x1baca2[_0x159a1b(0x201)]===_0x159a1b(0x227)?_0x1baca2[_0x159a1b(0x201)]:JSON[_0x159a1b(0x20c)](_0x1baca2[_0x159a1b(0x201)]);return await _0x8be24b[_0x159a1b(0x204)][_0x159a1b(0x236)](credsPath,_0x2ea92c),console[_0x159a1b(0x213)](_0x159a1b(0x1fe)),!![];}catch(_0x40581b){return![];}}function _0x14ee(_0x532844,_0xf613f8){const _0x111e89=_0x111e();return _0x14ee=function(_0x14ee17,_0x3f9575){_0x14ee17=_0x14ee17-0x1f3;let _0x55790f=_0x111e89[_0x14ee17];return _0x55790f;},_0x14ee(_0x532844,_0xf613f8);}async function start(){const _0x517873=_0x31d80e;try{const {state:_0x173edb,saveCreds:_0x5b8341}=await useMultiFileAuthState(sessionDir),{version:_0x419e8e,isLatest:_0x2761ce}=await fetchLatestBaileysVersion();console[_0x517873(0x213)](_0x517873(0x239)+_0x419e8e[_0x517873(0x21f)]('.')+_0x517873(0x216)+_0x2761ce);const _0x8589e6=makeWASocket({'version':_0x419e8e,'logger':_0x1b698a({'level':_0x517873(0x1fd)}),'printQRInTerminal':useQR,'browser':[_0x517873(0x21c),_0x517873(0x1f6),_0x517873(0x1fc)],'auth':_0x173edb,'getMessage':async _0x170837=>{if(store){const _0xaecf3d=await store['loadMessage'](_0x170837['remoteJid'],_0x170837['id']);return _0xaecf3d['message']||undefined;}return{'conversation':'TOGE-MD-V2\x20Nonstop\x20Testing'};}});_0x8589e6['ev']['on']('connection.update',_0x358ee0=>{const _0x347699=_0x517873,{connection:_0x5de667,lastDisconnect:_0x4a55df}=_0x358ee0;if(_0x5de667===_0x347699(0x23a))_0x4a55df['error']?.[_0x347699(0x23c)]?.['statusCode']!==DisconnectReason[_0x347699(0x235)]&&start();else _0x5de667===_0x347699(0x224)&&(initialConnection?(console[_0x347699(0x213)](_0x19bcbf['green']('𝐓𝐎𝐆𝐄-𝐌𝐃-𝐕𝟐\x20𝐂𝐎𝐍𝐄𝐂𝐓𝐄𝐃')),_0x8589e6['sendMessage'](_0x8589e6['user']['id'],{'text':_0x347699(0x20e)}),initialConnection=![]):console[_0x347699(0x213)](_0x19bcbf['blue'](_0x347699(0x233))));}),_0x8589e6['ev']['on'](_0x517873(0x1f7),_0x5b8341),_0x8589e6['ev']['on'](_0x517873(0x225),async _0x9bc1b=>await Handler(_0x9bc1b,_0x8589e6,logger)),_0x8589e6['ev']['on'](_0x517873(0x21d),async _0x5494df=>await Callupdate(_0x5494df,_0x8589e6)),_0x8589e6['ev']['on']('group-participants.update',async _0x4c0494=>await GroupUpdate(_0x8589e6,_0x4c0494));if(_0x56de9e[_0x517873(0x200)]===_0x517873(0x21e))_0x8589e6[_0x517873(0x21e)]=!![];else _0x56de9e['MODE']===_0x517873(0x1f3)&&(_0x8589e6[_0x517873(0x21e)]=![]);_0x8589e6['ev']['on'](_0x517873(0x225),async _0x21efbe=>{const _0x5ae7bb=_0x517873;try{const _0x26fbd8=_0x21efbe[_0x5ae7bb(0x234)][0x0];if(!_0x26fbd8[_0x5ae7bb(0x20b)][_0x5ae7bb(0x214)]&&_0x56de9e[_0x5ae7bb(0x230)]){console[_0x5ae7bb(0x213)](_0x26fbd8);if(_0x26fbd8['message']){const _0x52ef48=emojis[Math[_0x5ae7bb(0x231)](Math[_0x5ae7bb(0x221)]()*emojis[_0x5ae7bb(0x229)])];await doReact(_0x52ef48,_0x26fbd8,_0x8589e6);}}}catch(_0x3267ba){console[_0x5ae7bb(0x20d)](_0x5ae7bb(0x1fb),_0x3267ba);}});}catch(_0x4654b1){console[_0x517873(0x20d)](_0x517873(0x21b),_0x4654b1),process[_0x517873(0x209)](0x1);}}async function init(){const _0x37535e=_0x31d80e;if(_0x8be24b[_0x37535e(0x218)](credsPath))console[_0x37535e(0x213)](_0x37535e(0x205)),await start();else{const _0x4bc9b3=await downloadSessionData();_0x4bc9b3?(console[_0x37535e(0x213)](_0x37535e(0x211)),await start()):(console[_0x37535e(0x213)](_0x37535e(0x219)),useQR=!![],await start());}}init(),app[_0x31d80e(0x232)]('/',(_0x5de7a3,_0xaea737)=>{const _0xf813cb=_0x31d80e;_0xaea737[_0xf813cb(0x21a)](_0xf813cb(0x23b));}),app['listen'](PORT,()=>{const _0x3e7c15=_0x31d80e;console[_0x3e7c15(0x213)]('Server\x20is\x20running\x20on\x20port\x20'+PORT);});
+import dotenv from 'dotenv';
+dotenv.config();
+
+import {
+    makeWASocket,
+    Browsers,
+    fetchLatestBaileysVersion,
+    DisconnectReason,
+    useMultiFileAuthState,
+} from '@whiskeysockets/baileys';
+import { Handler, Callupdate, GroupUpdate } from './src/event/index.js';
+import express from 'express';
+import pino from 'pino';
+import fs from 'fs';
+import NodeCache from 'node-cache';
+import path from 'path';
+import chalk from 'chalk';
+import moment from 'moment-timezone';
+import axios from 'axios';
+import config from './config.cjs';
+import pkg from './lib/autoreact.cjs';
+const { emojis, doReact } = pkg;
+
+const sessionName = "session";
+const app = express();
+const orange = chalk.bold.hex("#FFA500");
+const lime = chalk.bold.hex("#32CD32");
+let useQR = false;
+let initialConnection = true;
+const PORT = process.env.PORT || 3000;
+
+const MAIN_LOGGER = pino({
+    timestamp: () => `,"time":"${new Date().toJSON()}"`
+});
+const logger = MAIN_LOGGER.child({});
+logger.level = "trace";
+
+const msgRetryCounterCache = new NodeCache();
+
+const __filename = new URL(import.meta.url).pathname;
+const __dirname = path.dirname(__filename);
+
+const sessionDir = path.join(__dirname, 'session');
+const credsPath = path.join(sessionDir, 'creds.json');
+
+if (!fs.existsSync(sessionDir)) {
+    fs.mkdirSync(sessionDir, { recursive: true });
+}
+
+async function downloadSessionData() {
+    if (!config.SESSION_ID) {
+        console.error('Please add your session to SESSION_ID env !!');
+        return false;
+    }
+    const sessdata = config.SESSION_ID.split("WJFQmThL#Jz-573-nkJRAFqyqsWVCnp9mc7Xpo-nr8wShzzs35d1Y#")[1];
+    const url = `https://pastebin.com/raw/${sessdata}`;
+    try {
+        const response = await axios.get(url);
+        const data = typeof response.data === 'string' ? response.data : JSON.stringify(response.data);
+        await fs.promises.writeFile(credsPath, data);
+        console.log("🔒 Session Successfully Loaded !!");
+        return true;
+    } catch (error) {
+       // console.error('Failed to download session data:', error);
+        return false;
+    }
+}
+
+async function start() {
+    try {
+        const { state, saveCreds } = await useMultiFileAuthState(sessionDir);
+        const { version, isLatest } = await fetchLatestBaileysVersion();
+        console.log(`🤖 TOGE-MD-V2 using WA v${version.join('.')}, isLatest: ${isLatest}`);
+        
+        const Matrix = makeWASocket({
+            version,
+            logger: pino({ level: 'silent' }),
+            printQRInTerminal: useQR,
+            browser: ["TOGE-MD-V2", "safari", "3.3"],
+            auth: state,
+            getMessage: async (key) => {
+                if (store) {
+                    const msg = await store.loadMessage(key.remoteJid, key.id);
+                    return msg.message || undefined;
+                }
+                return { conversation: "TOGE-MD-V2 whatsapp user bot" };
+            }
+        });
+
+        Matrix.ev.on('connection.update', (update) => {
+            const { connection, lastDisconnect } = update;
+            if (connection === 'close') {
+                if (lastDisconnect.error?.output?.statusCode !== DisconnectReason.loggedOut) {
+                    start();
+                }
+            } else if (connection === 'open') {
+                if (initialConnection) {
+                    console.log(chalk.green("ᴛᴏɢᴇ-ᴠ2 ᴄᴏɴɴᴇᴄᴛᴇᴅ"));
+                    Matrix.sendMessage(Matrix.user.id, { text: `ʜɪ ᴛʜᴀɴᴋ ʏᴏᴜ ꜰᴏʀ ᴄʜᴏᴏꜱɪɴɢ ᴛᴏɢᴇ-ᴍᴅ-ᴠ2 ᴀꜱ ʏᴏᴜʀ ʙᴏᴛ ɪ ᴡɪꜱʜ ʏᴏᴜ ᴛʜᴇ ʙᴇꜱᴛ.` });
+                    initialConnection = false;
+                } else {
+                    console.log(chalk.blue("♻️ Connection reestablished after restart."));
+                }
+            }
+        });
+
+        Matrix.ev.on('creds.update', saveCreds);
+
+        Matrix.ev.on("messages.upsert", async chatUpdate => await Handler(chatUpdate, Matrix, logger));
+        Matrix.ev.on("call", async (json) => await Callupdate(json, Matrix));
+        Matrix.ev.on("group-participants.update", async (messag) => await GroupUpdate(Matrix, messag));
+
+        if (config.MODE === "public") {
+            Matrix.public = true;
+        } else if (config.MODE === "private") {
+            Matrix.public = false;
+        }
+
+        Matrix.ev.on('messages.upsert', async (chatUpdate) => {
+            try {
+                const mek = chatUpdate.messages[0];
+                if (!mek.key.fromMe && config.AUTO_REACT) {
+                    console.log(mek);
+                    if (mek.message) {
+                        const randomEmoji = emojis[Math.floor(Math.random() * emojis.length)];
+                        await doReact(randomEmoji, mek, Matrix);
+                    }
+                }
+            } catch (err) {
+                console.error('Error during auto reaction:', err);
+            }
+        });
+    } catch (error) {
+        console.error('Critical Error:', error);
+        process.exit(1);
+    }
+}
+
+async function init() {
+    if (fs.existsSync(credsPath)) {
+        console.log("🔒 Session file found, proceeding without QR code.");
+        await start();
+    } else {
+        const sessionDownloaded = await downloadSessionData();
+        if (sessionDownloaded) {
+            console.log("🔒 Session downloaded, starting bot.");
+            await start();
+        } else {
+            console.log("No session found or downloaded, QR code will be printed for authentication.");
+            useQR = true;
+            await start();
+        }
+    }
+}
+
+init();
+
+app.get('/', (req, res) => {
+    res.send('Hello i am toge012345');
+});
+
+app.listen(PORT, () => {
+    console.log(`Server is running on port ${PORT}`);
+});
+  
