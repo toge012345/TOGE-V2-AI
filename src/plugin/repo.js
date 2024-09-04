@@ -10,7 +10,7 @@ const searchRepo = async (m, Matrix) => {
   const validCommands = ['repo', 'sc', 'script'];
 
   if (validCommands.includes(cmd)) {
-    const repoUrl = `https://api.github.com/repos/toge012345/TOGE-MD-V2`;
+    const repoUrl = `https://api.github.com/repos/toge012345/TOGE-V2-AI`;
     
     await handleRepoCommand(m, Matrix, repoUrl);
   }
@@ -57,7 +57,7 @@ const handleRepoCommand = async (m, Matrix, repoUrl) => {
             header: proto.Message.InteractiveMessage.Header.create({
               ...(await prepareWAMessageMedia({
                 image: {
-                  url: 'https://raw.githubusercontent.com/toge012345/TOGE-MD-V2/main/toge-v2.jpg',
+                  url: 'https://raw.githubusercontent.com/toge012345/TOGE-V2-AI/main/toge-v2.jpg',
                 },
               }, { upload: Matrix.waUploadToServer })),
               title: '',
